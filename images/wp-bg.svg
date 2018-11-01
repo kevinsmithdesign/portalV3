@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="361px" height="349px" viewBox="0 0 361 349" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="337" height="325" rx="6"></rect>
+        <filter x="-5.9%" y="-4.9%" width="111.9%" height="112.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.056470788 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="0%" y1="48.5917762%" x2="100%" y2="48.5917762%" id="linearGradient-4">
+            <stop stop-color="#0066CC" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#3CABFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-145.000000, -610.000000)">
+            <g id="Group-8-Copy-4" transform="translate(157.000000, 618.000000)">
+                <g id="Group">
+                    <g id="Rectangle-2">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use fill="#3399FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <rect fill-opacity="0.6" fill="url(#linearGradient-4)" mask="url(#mask-2)" transform="translate(237.108126, 353.108126) rotate(-45.000000) translate(-237.108126, -353.108126) " x="48.2341588" y="164.234159" width="377.747934" height="377.747934" rx="16"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

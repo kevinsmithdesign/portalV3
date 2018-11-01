@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="361px" height="349px" viewBox="0 0 361 349" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="337" height="325" rx="6"></rect>
+        <filter x="-5.9%" y="-4.9%" width="111.9%" height="112.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.056470788 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="0%" y1="48.5917762%" x2="100%" y2="48.5917762%" id="linearGradient-4">
+            <stop stop-color="#00BB67" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#00EA81" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-851.000000, -610.000000)">
+            <g id="Group-8-Copy-6" transform="translate(863.000000, 618.000000)">
+                <g id="Group">
+                    <g id="Oval-3">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use fill="#00BB67" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M161,454 C59.9318908,454 -22,372.068109 -22,271 C-22,169.931891 59.9318908,88 161,88 C262.068109,88 344,169.931891 344,271 C344,372.068109 262.068109,454 161,454 Z M161,403 C233.901587,403 293,343.901587 293,271 C293,198.098413 233.901587,139 161,139 C88.098413,139 29,198.098413 29,271 C29,343.901587 88.098413,403 161,403 Z" fill-opacity="0.6" fill="url(#linearGradient-4)" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

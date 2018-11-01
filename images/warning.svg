@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>baseline-warning-24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-891.000000, -170.000000)">
+            <g id="Group-5" transform="translate(870.000000, 117.000000)">
+                <g id="Group-6" transform="translate(21.000000, 53.000000)">
+                    <g id="baseline-warning-24px">
+                        <circle id="Oval" fill="#FD5231" cx="32" cy="32" r="32"></circle>
+                        <polygon id="Shape" points="15 21 35 21 35 41 15 41"></polygon>
+                        <path d="M20,41.3333333 L44,41.3333333 L32,20 L20,41.3333333 Z M33.0909091,37.9649123 L30.9090909,37.9649123 L30.9090909,35.7192982 L33.0909091,35.7192982 L33.0909091,37.9649123 Z M33.0909091,33.4736842 L30.9090909,33.4736842 L30.9090909,28.9824561 L33.0909091,28.9824561 L33.0909091,33.4736842 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="60px" viewBox="0 0 48 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>baseline-security-24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-565.000000, -1155.000000)">
+            <g id="Group-7" transform="translate(154.000000, 994.000000)">
+                <g id="baseline-security-24px" transform="translate(403.000000, 159.000000)">
+                    <path d="M32,2.66666667 L8,13.3333333 L8,29.3333333 C8,44.1333333 18.24,57.9733333 32,61.3333333 C45.76,57.9733333 56,44.1333333 56,29.3333333 L56,13.3333333 L32,2.66666667 Z M32,31.9733333 L50.6666667,31.9733333 C49.2533333,42.96 41.92,52.7466667 32,55.8133333 L32,32 L13.3333333,32 L13.3333333,16.8 L32,8.50666667 L32,31.9733333 Z" id="Shape" fill="#2A7F00" fill-rule="nonzero"></path>
+                    <polygon id="Shape" points="0 0 64 0 64 64 0 64"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

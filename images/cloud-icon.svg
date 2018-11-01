@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="44px" viewBox="0 0 64 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>baseline-cloud-24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-560.000000, -659.000000)">
+            <g id="baseline-cloud-24px" transform="translate(560.000000, 649.000000)">
+                <polygon id="Shape" points="0 0 64 0 64 64 0 64"></polygon>
+                <path d="M51.6,26.7733333 C49.7866667,17.5733333 41.7066667,10.6666667 32,10.6666667 C24.2933333,10.6666667 17.6,15.04 14.2666667,21.44 C6.24,22.2933333 0,29.0933333 0,37.3333333 C0,46.16 7.17333333,53.3333333 16,53.3333333 L50.6666667,53.3333333 C58.0266667,53.3333333 64,47.36 64,40 C64,32.96 58.5333333,27.2533333 51.6,26.7733333 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
