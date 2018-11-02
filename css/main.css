@@ -1,0 +1,101 @@
+*:focus {
+  outline: none; }
+
+body {
+  font-family: helvetica;
+  padding: 0;
+  margin: 0; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+.navBg {
+  background: #006CD6;
+  width: 100%; }
+  .navBg .navPageWrapper {
+    max-width: 1396px;
+    margin-left: auto;
+    margin-right: auto; }
+    .navBg .navPageWrapper nav {
+      display: flex;
+      flex-direction: row;
+      height: 118px;
+      color: #ffffff; }
+      @media only screen and (max-width: 922px) {
+        .navBg .navPageWrapper nav {
+          flex-direction: column;
+          height: 48px;
+          width: 240px; } }
+      .navBg .navPageWrapper nav .logoContainer {
+        flex: 1; }
+        .navBg .navPageWrapper nav .logoContainer .menuIcon {
+          display: none; }
+          @media only screen and (max-width: 922px) {
+            .navBg .navPageWrapper nav .logoContainer .menuIcon {
+              display: block;
+              width: 20px;
+              position: relative;
+              bottom: -20px;
+              margin-left: 20px; } }
+        .navBg .navPageWrapper nav .logoContainer .logo {
+          margin: 40px 20px 0 20px;
+          width: 172px; }
+          @media only screen and (max-width: 922px) {
+            .navBg .navPageWrapper nav .logoContainer .logo {
+              margin: -2px 0px 4px 55px; } }
+      .navBg .navPageWrapper nav .slider {
+        flex: 1; }
+      .navBg .navPageWrapper nav .search {
+        background: #006CD6; }
+        .navBg .navPageWrapper nav .search .searchIcon {
+          margin: 52px 20px 0 0; }
+          @media only screen and (max-width: 922px) {
+            .navBg .navPageWrapper nav .search .searchIcon {
+              margin: 0;
+              padding: 10px 20px; } }
+      .navBg .navPageWrapper nav .messages {
+        background: #006CD6; }
+        .navBg .navPageWrapper nav .messages .chatNotificationIcon {
+          margin: 52px 20px 0 0; }
+          @media only screen and (max-width: 922px) {
+            .navBg .navPageWrapper nav .messages .chatNotificationIcon {
+              margin: 0;
+              padding: 10px 20px; } }
+      .navBg .navPageWrapper nav .profile {
+        background: #006CD6; }
+        .navBg .navPageWrapper nav .profile .accountIcon {
+          margin: 52px 20px 0 0; }
+          @media only screen and (max-width: 922px) {
+            .navBg .navPageWrapper nav .profile .accountIcon {
+              margin: 0;
+              padding: 10px 20px; } }
+      .navBg .navPageWrapper nav .navBtn {
+        background: #3399FF;
+        color: #ffffff;
+        border: none;
+        height: 36px;
+        font-size: 13px;
+        width: 110px;
+        border-radius: 20px;
+        margin: 40px 10px 0px 10px;
+        text-align: center;
+        cursor: pointer; }
+        @media only screen and (max-width: 922px) {
+          .navBg .navPageWrapper nav .navBtn {
+            background: #006CD6;
+            padding-left: 20px;
+            color: #ffffff;
+            border: none;
+            border-radius: 0;
+            height: 36px;
+            font-size: 14px;
+            width: 240px;
+            margin: 0;
+            height: 48px;
+            text-align: left; } }
+
+.pageWrapper {
+  max-width: 1396px;
+  margin-left: auto;
+  margin-right: auto; }

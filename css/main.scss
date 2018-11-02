@@ -1,0 +1,139 @@
+
+*:focus {
+  outline: none;
+ }
+
+@mixin Phone {
+  @media only screen and (max-width:480px) {
+    @content;
+  }
+}
+
+@mixin Tablet {
+  @media only screen and (max-width:922px) {
+    @content;
+  }
+}
+
+body {
+  font-family:helvetica;
+  padding:0;
+  margin:0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin:0;
+  padding:0;
+}
+
+.navBg {
+  background:#006CD6;
+  width:100%;
+  .navPageWrapper {
+    max-width:1396px;
+    margin-left:auto;
+    margin-right:auto;
+      nav {
+        display:flex;
+        flex-direction:row;
+        height:118px;
+        color:#ffffff;
+        @include Tablet {
+          flex-direction:column;
+          height:48px;
+          width:240px;
+        }
+        .logoContainer {
+          flex:1;
+          .menuIcon {
+            display:none;
+            @include Tablet {
+              display:block;
+              width:20px;
+              position:relative;
+              bottom:-20px;
+              margin-left:20px;
+            }
+          }
+          .logo {
+            margin:40px 20px 0 20px;
+            width:172px;
+            @include Tablet {
+              margin:-2px 0px 4px 55px;
+            }
+          }
+        }
+        .slider {
+          flex:1;
+        }
+        .search {
+          background:#006CD6;
+          .searchIcon {
+            margin:52px 20px 0 0;
+            @include Tablet {
+              margin:0;
+              padding:10px 20px;
+            }
+          }
+        }
+        .messages {
+          background:#006CD6;
+          .chatNotificationIcon {
+            margin:52px 20px 0 0;
+            @include Tablet {
+              margin:0;
+              padding:10px 20px;
+            }
+          }
+        }
+       .profile {
+        background:#006CD6;
+        .accountIcon {
+          margin:52px 20px 0 0;
+          @include Tablet {
+            margin:0;
+            padding:10px 20px;
+          }
+        }
+      }
+        .navBtn {
+          background:#3399FF;
+          color:#ffffff;
+          border:none;
+          height:36px;
+          font-size:13px;
+          width:110px;
+          border-radius:20px;
+          margin:40px 10px 0px 10px;
+          text-align:center;
+          cursor:pointer;
+          @include Tablet {
+            background:#006CD6;
+            padding-left:20px;
+            color:#ffffff;
+            border:none;
+            border-radius:0;
+            height:36px;
+            font-size:14px;
+            width:240px;
+            margin:0;
+            height:48px;
+            // border-bottom:1px solid #ffffff;
+            text-align:left;
+          }
+        }
+    }  
+  }
+}
+
+.pageWrapper {
+  max-width:1396px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+
+
+
+
