@@ -1,4 +1,7 @@
 
+$white:#ffffff;
+$navBtn:#3399FF;
+
 *:focus {
   outline: none;
  }
@@ -15,6 +18,12 @@
   }
 }
 
+@mixin Desktop {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
 body {
   font-family:helvetica;
   padding:0;
@@ -26,110 +35,271 @@ p, h1, h2, h3, h4, h5, h6 {
   padding:0;
 }
 
-.navBg {
-  background:#006CD6;
-  width:100%;
-  .navPageWrapper {
+  .navContainer {
+    display:flex;
+    height:113px;
     max-width:1396px;
     margin-left:auto;
     margin-right:auto;
-      nav {
+    background:#006CD6;
+    .hamburgerMenu {
+      display:none;
+      // background:green;
+      @include Tablet {
+        display:block;
+      }
+      .hamburgerIcon {
+        width:30px;
+        margin:52px 20px 0 20px;
+        cursor:pointer;
+      }
+    }
+    .hostGatorLogo {
+      flex:1;
+      // background:red;
+      .logo {
+        margin:46px 20px 0 20px;
+      }
+    }
+    .dashboard {
+      display:block;
+      // background:blue;
+      @include Tablet {
+        display:none;
+      }
+    }
+    .hosting {
+      display:block;
+      // background:orange;
+      @include Tablet {
+        display:none;
+      }
+    }
+    .domains {
+      display:block;
+      // background:pink;
+      @include Tablet {
+        display:none;
+      }
+    }
+    .marketplace {
+      display:block;
+      // background:lightblue;
+      @include Tablet {
+        display:none;
+      }
+    }
+    .slider {
+      flex:1;
+      // background:red;
+    }
+    .search {
+      display:block;
+      // background:darkgreen;
+      @include Tablet {
+        display:none;
+      }
+      .searchIcon {
+        margin:46px 10px 0 10px;
+        cursor:pointer;
+      }
+    }
+    .messages {
+      display:block;
+      // background:purple;
+      @include Tablet {
+        display:none;
+      }
+      .messageIcon {
+        margin:46px 10px 0 10px;
+        cursor:pointer;
+      }
+    }
+    .account {
+      display:block;
+      // background:darkorange;
+      @include Tablet {
+        display:none;
+      }
+      .accountIcon {
+        margin:46px 10px 0 10px;
+        cursor:pointer;
+      }
+    }
+    .more {
+      // flex:1;
+      display:none;
+      // background:red;
+      .moreBtnContainer {
         display:flex;
-        flex-direction:row;
-        height:118px;
-        color:#ffffff;
-        @include Tablet {
-          flex-direction:column;
-          height:48px;
-          width:240px;
-        }
-        .logoContainer {
-          flex:1;
-          .menuIcon {
-            display:none;
-            @include Tablet {
-              display:block;
-              width:20px;
-              position:relative;
-              bottom:-20px;
-              margin-left:20px;
-            }
-          }
-          .logo {
-            margin:40px 20px 0 20px;
-            width:172px;
-            @include Tablet {
-              margin:-2px 0px 4px 55px;
-            }
-          }
-        }
-        .slider {
-          flex:1;
-        }
-        .search {
-          background:#006CD6;
-          .searchIcon {
-            margin:52px 20px 0 0;
-            @include Tablet {
-              margin:0;
-              padding:10px 20px;
-            }
-          }
-        }
-        .messages {
-          background:#006CD6;
-          .chatNotificationIcon {
-            margin:52px 20px 0 0;
-            @include Tablet {
-              margin:0;
-              padding:10px 20px;
-            }
-          }
-        }
-       .profile {
-        background:#006CD6;
-        .accountIcon {
-          margin:52px 20px 0 0;
-          @include Tablet {
-            margin:0;
-            padding:10px 20px;
-          }
+        .circleOne {
+          width:6px;
+          height:6px;
+          border-radius:50%;
+          background:$white;
+          margin-right:5px;
         }
       }
-        .navBtn {
-          background:#3399FF;
-          color:#ffffff;
-          border:none;
-          height:36px;
-          font-size:13px;
-          width:110px;
-          border-radius:20px;
-          margin:40px 10px 0px 10px;
-          text-align:center;
-          cursor:pointer;
-          @include Tablet {
-            background:#006CD6;
-            padding-left:20px;
-            color:#ffffff;
-            border:none;
-            border-radius:0;
-            height:36px;
-            font-size:14px;
-            width:240px;
-            margin:0;
-            height:48px;
-            // border-bottom:1px solid #ffffff;
-            text-align:left;
-          }
-        }
-    }  
+      @include Tablet {
+        display:block;
+      }
+      .moreIcon {
+        margin:52px 20px 0 0;
+        cursor:pointer;
+      }
+    }
+    .navBtn {
+      width:110px;
+      height:40px;
+      font-size:14px;
+      color:$white;
+      background:$navBtn;
+      border:none;
+      border-radius:20px;
+      margin:46px 10px 0 10px;
+      cursor:pointer;
+    }
   }
-}
 
-.pageWrapper {
-  max-width:1396px;
-  margin-left:auto;
-  margin-right:auto;
+  .pageContainer {
+    max-width:1396px;
+    margin-left:auto;
+    margin-right:auto;
+    background:purple;
+    position:relative;
+
+  .navDropdownContainer {
+    width:240px;
+    position:absolute;
+    top:0;
+    left:0;
+    display:none;
+    @include Tablet {
+      display:block;
+    }
+    .dashboardMobileBtn {
+      background:$navBtn;
+      height:48px;
+      line-height:48px;
+      font-size:14px;
+      padding-left:20px;
+      color:$white;
+    
+    }
+    .hostingMobileBtn {
+      background:$navBtn;
+      height:48px;
+      line-height:48px;
+      font-size:14px;
+      padding-left:20px;
+      color:$white;
+  
+    }
+    .domainMobileBtn {
+      background:$navBtn;
+      height:48px;
+      line-height:48px;
+      font-size:14px;
+      padding-left:20px;
+      color:$white;
+    }
+    .marketplaceMobileBtn {
+      background:$navBtn;
+      height:48px;
+      line-height:48px;
+      font-size:14px;
+      padding-left:20px;
+      color:$white;
+    }
+  }
+  .moreDropdownContainer {
+    width:160px;
+    position:absolute;
+    top:0;
+    right:0;
+    display:none;
+    @include Tablet {
+      display:block;
+    }
+    .searchMobile {
+      height:38px;
+      line-height:38px;
+      background:$navBtn;
+      color:$white;
+      // border-bottom:1px solid #999999;
+      text-align:left;
+      font-size:14px;
+      padding-left:20px;
+    }
+    .messageMobile {
+      height:38px;
+      line-height:38px;
+      color:$white;
+      font-size:14px;
+      background:$navBtn;
+      // border-bottom:1px solid #999999;
+      text-align:left;
+      padding-left:20px;
+    }
+  
+    .accountMobile {
+      height:38px;
+      line-height:38px;
+      color:$white;
+      background:$navBtn;
+      font-size:14px;
+      // border-bottom:1px solid #999999;
+      text-align:left;
+      padding-left:20px;
+    }
+  }
+  .mobileBtn:hover {
+    cursor:pointer;
+    background:#4CA6FE;
+  }
+  .userWelcomeContainer {
+    display:flex;
+    flex-direction:row;
+    @include Desktop {
+      flex-direction:column;
+    }
+    .userWelcome {
+      flex:1;
+      // background:red;
+      background:#006CD6;
+      h1 {
+        font-size:48px;
+        font-weight:200;
+        color:$white;
+        padding:0 0 20px 20px;
+      }
+      p {
+        font-size:22px;
+        line-height:28px;
+        color:$white;
+        font-weight:200;
+        padding:0 40px 38px 20px;
+        max-width:466px;
+
+      }
+    }
+    .testOne {
+      width:20px;
+      // background:red;
+      background:#006CD6;
+    }
+    .userAlert {
+      flex:1;
+      // background:green;
+      background:#006CD6;
+  }  
+  .testTwo {
+    width:20px;
+    background:#006CD6;
+    // background:orange;
+  }   
+      
+  }
 }
 
 

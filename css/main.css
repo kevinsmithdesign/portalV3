@@ -10,92 +10,205 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
 
-.navBg {
-  background: #006CD6;
-  width: 100%; }
-  .navBg .navPageWrapper {
-    max-width: 1396px;
-    margin-left: auto;
-    margin-right: auto; }
-    .navBg .navPageWrapper nav {
-      display: flex;
-      flex-direction: row;
-      height: 118px;
-      color: #ffffff; }
-      @media only screen and (max-width: 922px) {
-        .navBg .navPageWrapper nav {
-          flex-direction: column;
-          height: 48px;
-          width: 240px; } }
-      .navBg .navPageWrapper nav .logoContainer {
-        flex: 1; }
-        .navBg .navPageWrapper nav .logoContainer .menuIcon {
-          display: none; }
-          @media only screen and (max-width: 922px) {
-            .navBg .navPageWrapper nav .logoContainer .menuIcon {
-              display: block;
-              width: 20px;
-              position: relative;
-              bottom: -20px;
-              margin-left: 20px; } }
-        .navBg .navPageWrapper nav .logoContainer .logo {
-          margin: 40px 20px 0 20px;
-          width: 172px; }
-          @media only screen and (max-width: 922px) {
-            .navBg .navPageWrapper nav .logoContainer .logo {
-              margin: -2px 0px 4px 55px; } }
-      .navBg .navPageWrapper nav .slider {
-        flex: 1; }
-      .navBg .navPageWrapper nav .search {
-        background: #006CD6; }
-        .navBg .navPageWrapper nav .search .searchIcon {
-          margin: 52px 20px 0 0; }
-          @media only screen and (max-width: 922px) {
-            .navBg .navPageWrapper nav .search .searchIcon {
-              margin: 0;
-              padding: 10px 20px; } }
-      .navBg .navPageWrapper nav .messages {
-        background: #006CD6; }
-        .navBg .navPageWrapper nav .messages .chatNotificationIcon {
-          margin: 52px 20px 0 0; }
-          @media only screen and (max-width: 922px) {
-            .navBg .navPageWrapper nav .messages .chatNotificationIcon {
-              margin: 0;
-              padding: 10px 20px; } }
-      .navBg .navPageWrapper nav .profile {
-        background: #006CD6; }
-        .navBg .navPageWrapper nav .profile .accountIcon {
-          margin: 52px 20px 0 0; }
-          @media only screen and (max-width: 922px) {
-            .navBg .navPageWrapper nav .profile .accountIcon {
-              margin: 0;
-              padding: 10px 20px; } }
-      .navBg .navPageWrapper nav .navBtn {
-        background: #3399FF;
-        color: #ffffff;
-        border: none;
-        height: 36px;
-        font-size: 13px;
-        width: 110px;
-        border-radius: 20px;
-        margin: 40px 10px 0px 10px;
-        text-align: center;
-        cursor: pointer; }
-        @media only screen and (max-width: 922px) {
-          .navBg .navPageWrapper nav .navBtn {
-            background: #006CD6;
-            padding-left: 20px;
-            color: #ffffff;
-            border: none;
-            border-radius: 0;
-            height: 36px;
-            font-size: 14px;
-            width: 240px;
-            margin: 0;
-            height: 48px;
-            text-align: left; } }
-
-.pageWrapper {
+.navContainer {
+  display: flex;
+  height: 113px;
   max-width: 1396px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: #006CD6; }
+  .navContainer .hamburgerMenu {
+    display: none; }
+    @media only screen and (max-width: 922px) {
+      .navContainer .hamburgerMenu {
+        display: block; } }
+    .navContainer .hamburgerMenu .hamburgerIcon {
+      width: 30px;
+      margin: 52px 20px 0 20px;
+      cursor: pointer; }
+  .navContainer .hostGatorLogo {
+    flex: 1; }
+    .navContainer .hostGatorLogo .logo {
+      margin: 46px 20px 0 20px; }
+  .navContainer .dashboard {
+    display: block; }
+    @media only screen and (max-width: 922px) {
+      .navContainer .dashboard {
+        display: none; } }
+  .navContainer .hosting {
+    display: block; }
+    @media only screen and (max-width: 922px) {
+      .navContainer .hosting {
+        display: none; } }
+  .navContainer .domains {
+    display: block; }
+    @media only screen and (max-width: 922px) {
+      .navContainer .domains {
+        display: none; } }
+  .navContainer .marketplace {
+    display: block; }
+    @media only screen and (max-width: 922px) {
+      .navContainer .marketplace {
+        display: none; } }
+  .navContainer .slider {
+    flex: 1; }
+  .navContainer .search {
+    display: block; }
+    @media only screen and (max-width: 922px) {
+      .navContainer .search {
+        display: none; } }
+    .navContainer .search .searchIcon {
+      margin: 46px 10px 0 10px;
+      cursor: pointer; }
+  .navContainer .messages {
+    display: block; }
+    @media only screen and (max-width: 922px) {
+      .navContainer .messages {
+        display: none; } }
+    .navContainer .messages .messageIcon {
+      margin: 46px 10px 0 10px;
+      cursor: pointer; }
+  .navContainer .account {
+    display: block; }
+    @media only screen and (max-width: 922px) {
+      .navContainer .account {
+        display: none; } }
+    .navContainer .account .accountIcon {
+      margin: 46px 10px 0 10px;
+      cursor: pointer; }
+  .navContainer .more {
+    display: none; }
+    .navContainer .more .moreBtnContainer {
+      display: flex; }
+      .navContainer .more .moreBtnContainer .circleOne {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #ffffff;
+        margin-right: 5px; }
+    @media only screen and (max-width: 922px) {
+      .navContainer .more {
+        display: block; } }
+    .navContainer .more .moreIcon {
+      margin: 52px 20px 0 0;
+      cursor: pointer; }
+  .navContainer .navBtn {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+    color: #ffffff;
+    background: #3399FF;
+    border: none;
+    border-radius: 20px;
+    margin: 46px 10px 0 10px;
+    cursor: pointer; }
+
+.pageContainer {
+  max-width: 1396px;
+  margin-left: auto;
+  margin-right: auto;
+  background: purple;
+  position: relative; }
+  .pageContainer .navDropdownContainer {
+    width: 240px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; }
+    @media only screen and (max-width: 922px) {
+      .pageContainer .navDropdownContainer {
+        display: block; } }
+    .pageContainer .navDropdownContainer .dashboardMobileBtn {
+      background: #3399FF;
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px;
+      padding-left: 20px;
+      color: #ffffff; }
+    .pageContainer .navDropdownContainer .hostingMobileBtn {
+      background: #3399FF;
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px;
+      padding-left: 20px;
+      color: #ffffff; }
+    .pageContainer .navDropdownContainer .domainMobileBtn {
+      background: #3399FF;
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px;
+      padding-left: 20px;
+      color: #ffffff; }
+    .pageContainer .navDropdownContainer .marketplaceMobileBtn {
+      background: #3399FF;
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px;
+      padding-left: 20px;
+      color: #ffffff; }
+  .pageContainer .moreDropdownContainer {
+    width: 160px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none; }
+    @media only screen and (max-width: 922px) {
+      .pageContainer .moreDropdownContainer {
+        display: block; } }
+    .pageContainer .moreDropdownContainer .searchMobile {
+      height: 38px;
+      line-height: 38px;
+      background: #3399FF;
+      color: #ffffff;
+      text-align: left;
+      font-size: 14px;
+      padding-left: 20px; }
+    .pageContainer .moreDropdownContainer .messageMobile {
+      height: 38px;
+      line-height: 38px;
+      color: #ffffff;
+      font-size: 14px;
+      background: #3399FF;
+      text-align: left;
+      padding-left: 20px; }
+    .pageContainer .moreDropdownContainer .accountMobile {
+      height: 38px;
+      line-height: 38px;
+      color: #ffffff;
+      background: #3399FF;
+      font-size: 14px;
+      text-align: left;
+      padding-left: 20px; }
+  .pageContainer .mobileBtn:hover {
+    cursor: pointer;
+    background: #4CA6FE; }
+  .pageContainer .userWelcomeContainer {
+    display: flex;
+    flex-direction: row; }
+    @media only screen and (max-width: 1024px) {
+      .pageContainer .userWelcomeContainer {
+        flex-direction: column; } }
+    .pageContainer .userWelcomeContainer .userWelcome {
+      flex: 1;
+      background: #006CD6; }
+      .pageContainer .userWelcomeContainer .userWelcome h1 {
+        font-size: 48px;
+        font-weight: 200;
+        color: #ffffff;
+        padding: 0 0 20px 20px; }
+      .pageContainer .userWelcomeContainer .userWelcome p {
+        font-size: 22px;
+        line-height: 28px;
+        color: #ffffff;
+        font-weight: 200;
+        padding: 0 40px 38px 20px;
+        max-width: 466px; }
+    .pageContainer .userWelcomeContainer .testOne {
+      width: 20px;
+      background: #006CD6; }
+    .pageContainer .userWelcomeContainer .userAlert {
+      flex: 1;
+      background: #006CD6; }
+    .pageContainer .userWelcomeContainer .testTwo {
+      width: 20px;
+      background: #006CD6; }
