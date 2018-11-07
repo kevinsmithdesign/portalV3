@@ -1,6 +1,38 @@
 
 $white:#ffffff;
 $navBtn:#3399FF;
+$primaryColor:#0080FF;
+$mobileBorder:#eeeeee; 
+$bgColor:#EAEDF0;
+
+.modalBgContainer {
+  height:100%;
+  width:100%;
+  background:black;
+  position:absolute;
+  z-index:100;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
+
+.bgHeaderColor {
+  background:#006CD6;
+  width:100%;
+}
+
+.pageBgColor {
+  background:$bgColor;
+}
+
+.pageBgPositionForOverlap {
+  background:$bgColor;
+  // position:relative;
+  // z-index:-100;
+  height:75px;
+  margin-top:-75px;
+}
 
 *:focus {
   outline: none;
@@ -165,7 +197,8 @@ p, h1, h2, h3, h4, h5, h6 {
     max-width:1396px;
     margin-left:auto;
     margin-right:auto;
-    background:purple;
+    // background:purple;
+    background:$bgColor;
     position:relative;
 
   .navDropdownContainer {
@@ -292,6 +325,84 @@ p, h1, h2, h3, h4, h5, h6 {
       flex:1;
       // background:green;
       background:#006CD6;
+
+      .alertContainer {
+        margin-bottom:134px;
+        .alertbgOne {
+          background:#0080FF;
+            height:82px;
+            max-width:602px;
+          margin-left:auto;
+          margin-right:auto;
+          border-radius:6px;
+          @include Phone {
+            border-radius:0;
+          }
+        }
+        
+        .alertbgTwo {
+          background:#4CA6FE;
+          height:82px;
+          max-width:644px;
+          margin-left:auto;
+          margin-right:auto;
+          margin-top:-65px;
+          border-radius:6px;
+          @include Phone {
+            border-radius:0;
+          }
+        }
+        
+        .alertbgThree {
+          display:flex;
+          margin-left:auto;
+          margin-right:auto;
+          background:$white;
+          max-width:681px;
+          margin-top:-65px;
+          // height:100px;
+          border-radius:6px;
+          @include Phone {
+            border-radius:0;
+          }
+          // position:relative;
+          // bottom:145px;
+          .alertIconContainer {
+            // width:100px;
+            background:$white;
+            border-top-left-radius:6px;
+            border-bottom-left-radius:6px;
+            .warningIcon {
+              width:50px;
+              padding:20px;
+              position:relative;
+              top:5px;
+            }
+          }
+          .alertBody {
+            font-size:16px;
+            font-weight:200;
+            // line-height:100px;
+            color:#4A4A4A;
+            padding:40px 0;
+          }
+          .alertBackup {
+            // padding:0 0 0 60px;
+            // line-height:100px;
+            .click {
+              cursor:pointer;
+              font-weight:200;
+              color:#4A4A4A;
+              font-size:16px;
+              text-decoration:none;
+            }
+          }
+        }
+        
+      }
+
+
+
   }  
   .testTwo {
     width:20px;
@@ -300,6 +411,630 @@ p, h1, h2, h3, h4, h5, h6 {
   }   
       
   }
+
+  .statsContainer {
+    display:flex;
+    height:160px;
+    margin-top:-84px;
+    h6 {
+      font-size:16px;
+      font-weight:200;
+      padding:38px 0 10px 0;
+      color:#8F98A0;
+    }
+    h1 {
+      font-size:48px;
+      font-weight:400;
+      @include Desktop {
+        font-size:40px;
+      }
+      h2 {
+        font-size:22px;
+        @include Desktop {
+          font-size:18px;
+        }
+      }
+    }
+    .statsWrapper {
+      // flex:1;
+      width:160px;
+      margin:0 16px 0 0;
+      @include Desktop {
+         margin:0;
+         border-right:1px solid $mobileBorder; 
+      }
+      @include Tablet {
+        width:100%;
+        border-bottom:1px solid $mobileBorder;
+      }
+   
+      .stats {
+        height:160px;
+        width:160px;
+        background:$white;
+        border-radius:6px;
+        text-align:center;
+        h1 {
+          color:#00BB67;
+        }
+         @include Desktop {
+          border-radius:0;
+        }
+        @include Tablet {
+          width:100%;
+        }
+      }
+    }
+    .visitors {
+      flex:1;
+      background:$white;
+      border-top-left-radius:6px;
+      border-bottom-left-radius:6px;
+      display:block;
+        @include Desktop {
+          border-radius:0;
+          // border-right:1px solid #eeeeee;
+        }
+      h6 {
+        padding-left:50px;
+        @include Desktop {
+          padding-left:0;
+          text-align:center;
+        }
+      }
+      h1 {
+        padding-left:50px;
+        @include Desktop {
+          padding-left:0;
+          text-align:center;
+        }
+      }
+      @include Tablet {
+        display:none;
+      }
+    }
+    .vistorsWeeklyTrend {
+      flex:1;
+      background:$white;
+      margin:0 16px 0 0;
+      border-top-right-radius:6px;
+      border-bottom-right-radius:6px;
+      display:block;
+      @include Desktop {
+        margin:0;
+        border-radius:0;
+        border-right:1px solid #eeeeee;
+      }
+      @include Tablet {
+        display:none;
+      }
+      .graphContainer {
+    display:flex;
+    position:relative;
+    height:100px;
+    width:104px;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:30px;
+    .bar1 {
+      width:8px;
+      height:100px;
+      background:#dddddd;
+      border-radius:8px;
+      position:absolute;
+      bottom:0;
+      .barFill1 {
+        width:8px;
+        border-radius:8px;
+        position:absolute;
+        bottom:0;
+      }
+    }
+    .bar2 {
+      width:8px;
+      height:100px;
+      background:#dddddd;
+      border-radius:8px;
+      position:absolute;
+      bottom:0;
+      left:16px;
+      .barFill2 {
+        width:8px;
+        border-radius:8px;
+        position:absolute;
+        bottom:0;
+      }
+    }
+    .bar3 {
+      width:8px;
+      height:100px;
+      background:#dddddd;
+      border-radius:8px;
+      position:absolute;
+      bottom:0;
+      left:32px;
+      .barFill3 {
+        width:8px;
+        border-radius:8px;
+        position:absolute;
+        bottom:0;
+      }
+    }
+    .bar4 {
+      width:8px;
+      height:100px;
+      background:#dddddd;
+      border-radius:8px;
+      position:absolute;
+      bottom:0;
+      left:48px;
+      .barFill4 {
+        width:8px;
+        border-radius:8px;
+        position:absolute;
+        bottom:0;
+      }
+    }
+    .bar5 {
+      width:8px;
+      height:100px;
+      background:#dddddd;
+      border-radius:8px;
+      position:absolute;
+      bottom:0;
+      left:64px;
+      .barFill5 {
+        width:8px;
+        border-radius:8px;
+        position:absolute;
+        bottom:0;
+      }
+    }
+    .bar6 {
+      width:8px;
+      height:100px;
+      background:#dddddd;
+      border-radius:8px;
+      position:absolute;
+      bottom:0;
+      left:80px;
+       .barFill6 {
+        width:8px;
+        border-radius:8px;
+        position:absolute;
+        bottom:0;
+      }
+    }
+    .bar7 {
+      width:8px;
+      height:100px;
+      background:#dddddd;
+      border-radius:8px;
+      position:absolute;
+      bottom:0;
+      left:96px;
+       .barFill7 {
+        width:8px;
+        border-radius:8px;
+        position:absolute;
+        bottom:0;
+      }
+    }
+  }
+    }
+    .activePlans {
+      // flex:1;
+      width:160px;
+      text-align:center;
+      background:$white;
+      border-radius:6px;
+      margin:0 16px 0 0;
+      border-right:1px solid #eeeeee;
+      @include Desktop {
+        margin:0;
+        border-radius:0;
+      }
+      @include Tablet {
+        width:100%;
+      }
+    }
+    .nextPayment {
+      flex:1;
+      background:$white;
+      border-top-left-radius:6px;
+      border-bottom-left-radius:6px;
+      display:block;
+      @include Desktop {
+        border-radius:0;
+      }
+      @include Tablet {
+        display:none;
+      }
+      h6 {
+        padding-left:50px;
+        @include Desktop {
+          padding-left:0;
+          text-align:center;
+        }
+      }
+      h1 {
+        padding-left:50px;
+        @include Desktop {
+          padding-left:0;
+          text-align:center;
+        }
+      }
+    }
+    .paymentDate {
+      flex:1;
+      background:$white;
+      border-top-right-radius:6px;
+      border-bottom-right-radius:6px;
+      text-align:center;
+      display:block;
+      @include Desktop {
+        border-radius:0;
+      }
+      @include Tablet {
+        display:none;
+      }
+      h2 {
+        font-size:22px;
+        font-weight:200;
+        padding-top:70px;
+        color:#0080FF;
+      }
+    }
+  }
+
+  /* Mobile Stats STARTS */
+  .mobileStatsWrapper {
+    display:none;
+    @include Tablet {
+      display:block;
+    }
+  .mobileVistorStatsContainer {
+    height:160px;
+    display:flex;
+    .mobileVistorsLeftCol {
+      flex:1;
+      background:$white;
+      // border-right:1px solid #eeeeee;
+      h6 {
+        font-size: 16px;
+        font-weight: 200;
+        padding: 38px 0 10px 0;
+        color: #8F98A0;
+        text-align:center;
+      }
+      h1 {
+        font-size:40px;
+        font-weight:400;
+        text-align:center;
+      }
+      @include Tablet {
+        border-top:1px solid $mobileBorder;
+        // border-right:1px solid $mobileBorder;
+      }
+    }
+    .mobileVistorsRightCol {
+      flex:1;
+      border-top:1px solid $mobileBorder;
+      background:$white;
+    }
+  }
+  
+  .mobilePaymentContainer {
+    display:flex;
+    height:160px;
+    .mobilePaymentLeftCol {
+      flex:1;
+      background:$white;
+      border-top:1px solid $mobileBorder;
+      // border-right:1px solid $mobileBorder;
+      h6 {
+        font-size: 16px;
+        font-weight: 200;
+        padding: 38px 0 10px 0;
+        color: #8F98A0;
+        text-align:center;
+      }
+      h1 {
+        font-size:40px;
+        font-weight:400;
+        text-align:center;
+      }
+    }
+    .mobilePaymentRightCol {
+      flex:1;
+      background:$white;
+      border-top:1px solid $mobileBorder;
+      h6 {
+        font-size: 16px;
+        font-weight: 200;
+        padding: 38px 0 10px 0;
+        color: #8F98A0;
+        text-align:center;
+      }
+      h1 {
+        font-size:28px;
+        font-weight:400;
+        text-align:center;
+        padding-top:6px;
+        color:$primaryColor;
+      }
+    }
+  }
+}
+  /* Mobile Stats ENDS */
+
+  .pageTitle {
+    padding:70px 0 50px 0;
+    font-size:32px;
+    color:#243646;
+    font-weight:400;
+  }
+
+ /* My Hosting Plans Starts */
+
+  .columnWrapper {
+    display:flex;
+    flex-direction:row;
+    @media only screen and (max-width: 1024px) {
+      flex-direction:column;
+    }
+    .leftContainer {
+      display:flex;
+      width:100%;
+      @media only screen and (max-width: 600px) {
+        flex-direction:column;
+      }
+      .one {
+        flex:1;
+        background:blue;
+        margin:0 8px 0 0;
+        @media only screen and (max-width: 1024px) {
+          margin:0 8px 8px 0;
+        }
+        @media only screen and (max-width: 600px) {
+          margin:0 0 16px 0;
+        }
+      }
+      .two {
+        flex:1;
+        background:red;
+        margin:0 8px 0 8px;
+        @media only screen and (max-width: 1024px) {
+          margin:0 0 8px 8px;
+        }
+         @media only screen and (max-width: 600px) {
+          margin:0 0 16px 0;
+        }
+      }
+    }
+  
+    .rightContainer {
+      display:flex;
+      width:100%;
+      @media only screen and (max-width: 600px) {
+        flex-direction:column;
+      }
+      .three {
+        background:green;
+        flex:1;
+        margin:0 8px 0 8px;
+         @media only screen and (max-width: 1024px) {
+          margin:8px 8px 0 0;
+        }
+        @media only screen and (max-width: 600px) {
+          margin:0 0 16px 0;
+        }
+      }
+      .four {
+        background:pink;
+        flex:1;
+        margin:0 0 0 8px;
+         @media only screen and (max-width: 1024px) {
+           margin-top:8px;
+        }
+        @media only screen and (max-width: 600px) {
+          margin:0 0 16px 0;
+        }
+      }
+    }
+    .cardContainer {
+      background:$white;
+      padding:40px 50px;
+      .defaultLoadImg {
+        width:64px;
+        height:64px;
+        background:#EAEAEA;
+        border-radius:50%;
+      }
+      .defaultLineOne {
+        max-width:65px;
+        height:13px;
+        background:#D8D8D8;
+        border-radius:6px;
+        margin:30px 0 15px 0;
+      }
+      .defaultLineTwo {
+        max-width:228px;
+        height:20px;
+        background:#E4E4E4;
+        border-radius:10px;
+        margin:15px 0;
+      }
+      .defaultLineThree {
+        max-width:103px;
+        height:13px;
+        background:#F2f2f2;
+        border-radius:10px;
+        margin:15px 0 55px 0;
+      }
+      .defaultLineFour {
+        max-width:120px;
+        height:13px;
+        background:#D8D8D8;
+        border-radius:6px;
+      }
+    }
+  }
+   /* My Hosting Plans Ends */
+
+
+  /*  My Products STARTS */
+  .productsContainer {
+    display:flex;
+    flex-direction:row;
+    @media only screen and (max-width: 1024px) {
+       flex-direction:column;
+     }
+    .productsLeftColumn {
+      flex:1;
+      // background:red;
+      .securityPrivacyContainer {
+        display:flex;
+        flex-direction:row;
+        .security {
+          flex:1;
+          height:324px;
+          background:$white;
+          // background:red;
+          margin:0 8px 0 0;
+         @media only screen and (max-width: 1024px) {
+            margin:0 8px 8px 0;
+          }
+         @media only screen and (max-width: 600px) {
+            margin:0 0 8px 0;
+         }
+        }
+        .privacy {
+          flex:1;
+          height:324px;
+          // background:lightgreen;
+          background:$white;
+          margin:0 8px 0 8px;
+          @media only screen and (max-width: 1024px) {
+            margin:0 0 8px 8px;
+          }
+          @media only screen and (max-width: 600px) {
+            margin:8px 0 8px 0;
+         }
+        }
+         @media only screen and (max-width: 600px) {
+            // margin:0 0 16px 0;
+           flex-direction:column;
+         }
+        
+          .cardContainer {
+      background:$white;
+      padding:40px 50px;
+      .defaultLoadImg {
+        width:64px;
+        height:64px;
+        background:#EAEAEA;
+        border-radius:50%;
+      }
+      .defaultLineOne {
+        max-width:65px;
+        height:13px;
+        background:#D8D8D8;
+        border-radius:6px;
+        margin:30px 0 15px 0;
+      }
+      .defaultLineTwo {
+        max-width:228px;
+        height:20px;
+        background:#E4E4E4;
+        border-radius:10px;
+        margin:15px 0;
+      }
+      .defaultLineThree {
+        max-width:103px;
+        height:13px;
+        background:#F2f2f2;
+        border-radius:10px;
+        margin:15px 0 55px 0;
+      }
+      .defaultLineFour {
+        max-width:120px;
+        height:13px;
+        background:#D8D8D8;
+        border-radius:6px;
+      }
+    }
+      }
+    }
+    .productsRightColumn {
+      flex:1;
+      // background:pink;
+    }
+  }
+  
+  .domainInfoContainer {
+    // max-width:690px;
+    display:flex;
+    height:152px;
+    @media only screen and (max-width: 1024px) {
+       margin:8px 0 0 -8px;
+     }
+    .domainIcon {
+      width:152px;
+      // background:orange;
+      background:$white;
+      margin:0 0 0 8px;
+    }
+    .domainBodyInfo {
+      flex:1;
+      background:$white;
+      margin:0 0 0 8px;
+      h6 {
+        font-size:16px;
+        font-weight:200;
+      }
+      h3 {
+        font-size:22px;
+        font-weight:200;
+      }
+      .defaultLineFive {
+        background:#D8D8D8;
+        max-width:103px;
+        height:12px;
+        border-radius:6px;
+        margin:54px 0 11px 35px;
+      }
+      .defaultLineSix {
+        background:#D8D8D8;
+        max-width:225px;
+        height:20px;
+        border-radius:20px;
+        margin:0 0 0 35px;
+      }
+    }
+    .manageDomain {
+      // flex:1;
+      width:178px;
+      background:$white;
+      // background:green;
+      .defaultLineSeven {
+        height:12px;
+        max-width:115px;
+        background:#D8D8D8;
+        border-radius:6px;
+        margin:70px 0 0 0;
+      }
+    }
+  }
+  
+  .domainInfoMarginBottom {
+    margin-bottom:20px;
+  }
+
+  /*  My Product ENDS */
+  
+
+
 }
 
 

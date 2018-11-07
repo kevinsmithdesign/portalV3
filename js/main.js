@@ -63,6 +63,28 @@ $(function() {
         $('.moreDropdownContainer').toggle();
     });
 
+    // Up Blink on Status Bar
+    // var blink = new TimelineMax();
+    // blink.to('.up', 1, {opacity: .2, repeat: 2})
+    //      .to('.up', 1, {opacity: 1});
+
+    
+
+
+
+    // Status Progress Bar Chart Animation
+    var tl = new TimelineMax();
+
+    tl.to('.barFill1', .2, {  background:'#0080FF', height: '30px'})
+    .to('.barFill2', .2, { background: '#0080FF', height: '41px'})
+    .to('.barFill3', .2, { background: '#0080FF', height: '61px'})
+    .to('.barFill4', .2, { background: '#0080FF', height: '83px'})
+    .to('.barFill5', .2, { background: '#0080FF', height: '26px'})
+    .to('.barFill6', .2, { background: '#0080FF', height: '53px'})
+    .to('.barFill7', .2, { background: '#0080FF', height: '79px'});
+
+
+
  
 
 

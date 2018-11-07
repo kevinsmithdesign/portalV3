@@ -1,3 +1,26 @@
+.modalBgContainer {
+  height: 100%;
+  width: 100%;
+  background: black;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.bgHeaderColor {
+  background: #006CD6;
+  width: 100%; }
+
+.pageBgColor {
+  background: #EAEDF0; }
+
+.pageBgPositionForOverlap {
+  background: #EAEDF0;
+  height: 75px;
+  margin-top: -75px; }
+
 *:focus {
   outline: none; }
 
@@ -107,8 +130,14 @@ p, h1, h2, h3, h4, h5, h6 {
   max-width: 1396px;
   margin-left: auto;
   margin-right: auto;
-  background: purple;
-  position: relative; }
+  background: #EAEDF0;
+  position: relative;
+  /* Mobile Stats STARTS */
+  /* Mobile Stats ENDS */
+  /* My Hosting Plans Starts */
+  /* My Hosting Plans Ends */
+  /*  My Products STARTS */
+  /*  My Product ENDS */ }
   .pageContainer .navDropdownContainer {
     width: 240px;
     position: absolute;
@@ -209,6 +238,565 @@ p, h1, h2, h3, h4, h5, h6 {
     .pageContainer .userWelcomeContainer .userAlert {
       flex: 1;
       background: #006CD6; }
+      .pageContainer .userWelcomeContainer .userAlert .alertContainer {
+        margin-bottom: 134px; }
+        .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgOne {
+          background: #0080FF;
+          height: 82px;
+          max-width: 602px;
+          margin-left: auto;
+          margin-right: auto;
+          border-radius: 6px; }
+          @media only screen and (max-width: 480px) {
+            .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgOne {
+              border-radius: 0; } }
+        .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgTwo {
+          background: #4CA6FE;
+          height: 82px;
+          max-width: 644px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: -65px;
+          border-radius: 6px; }
+          @media only screen and (max-width: 480px) {
+            .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgTwo {
+              border-radius: 0; } }
+        .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree {
+          display: flex;
+          margin-left: auto;
+          margin-right: auto;
+          background: #ffffff;
+          max-width: 681px;
+          margin-top: -65px;
+          border-radius: 6px; }
+          @media only screen and (max-width: 480px) {
+            .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree {
+              border-radius: 0; } }
+          .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertIconContainer {
+            background: #ffffff;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px; }
+            .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertIconContainer .warningIcon {
+              width: 50px;
+              padding: 20px;
+              position: relative;
+              top: 5px; }
+          .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertBody {
+            font-size: 16px;
+            font-weight: 200;
+            color: #4A4A4A;
+            padding: 40px 0; }
+          .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertBackup .click {
+            cursor: pointer;
+            font-weight: 200;
+            color: #4A4A4A;
+            font-size: 16px;
+            text-decoration: none; }
     .pageContainer .userWelcomeContainer .testTwo {
       width: 20px;
       background: #006CD6; }
+  .pageContainer .statsContainer {
+    display: flex;
+    height: 160px;
+    margin-top: -84px; }
+    .pageContainer .statsContainer h6 {
+      font-size: 16px;
+      font-weight: 200;
+      padding: 38px 0 10px 0;
+      color: #8F98A0; }
+    .pageContainer .statsContainer h1 {
+      font-size: 48px;
+      font-weight: 400; }
+      @media only screen and (max-width: 1024px) {
+        .pageContainer .statsContainer h1 {
+          font-size: 40px; } }
+      .pageContainer .statsContainer h1 h2 {
+        font-size: 22px; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .statsContainer h1 h2 {
+            font-size: 18px; } }
+    .pageContainer .statsContainer .statsWrapper {
+      width: 160px;
+      margin: 0 16px 0 0; }
+      @media only screen and (max-width: 1024px) {
+        .pageContainer .statsContainer .statsWrapper {
+          margin: 0;
+          border-right: 1px solid #eeeeee; } }
+      @media only screen and (max-width: 922px) {
+        .pageContainer .statsContainer .statsWrapper {
+          width: 100%;
+          border-bottom: 1px solid #eeeeee; } }
+      .pageContainer .statsContainer .statsWrapper .stats {
+        height: 160px;
+        width: 160px;
+        background: #ffffff;
+        border-radius: 6px;
+        text-align: center; }
+        .pageContainer .statsContainer .statsWrapper .stats h1 {
+          color: #00BB67; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .statsContainer .statsWrapper .stats {
+            border-radius: 0; } }
+        @media only screen and (max-width: 922px) {
+          .pageContainer .statsContainer .statsWrapper .stats {
+            width: 100%; } }
+    .pageContainer .statsContainer .visitors {
+      flex: 1;
+      background: #ffffff;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      display: block; }
+      @media only screen and (max-width: 1024px) {
+        .pageContainer .statsContainer .visitors {
+          border-radius: 0; } }
+      .pageContainer .statsContainer .visitors h6 {
+        padding-left: 50px; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .statsContainer .visitors h6 {
+            padding-left: 0;
+            text-align: center; } }
+      .pageContainer .statsContainer .visitors h1 {
+        padding-left: 50px; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .statsContainer .visitors h1 {
+            padding-left: 0;
+            text-align: center; } }
+      @media only screen and (max-width: 922px) {
+        .pageContainer .statsContainer .visitors {
+          display: none; } }
+    .pageContainer .statsContainer .vistorsWeeklyTrend {
+      flex: 1;
+      background: #ffffff;
+      margin: 0 16px 0 0;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      display: block; }
+      @media only screen and (max-width: 1024px) {
+        .pageContainer .statsContainer .vistorsWeeklyTrend {
+          margin: 0;
+          border-radius: 0;
+          border-right: 1px solid #eeeeee; } }
+      @media only screen and (max-width: 922px) {
+        .pageContainer .statsContainer .vistorsWeeklyTrend {
+          display: none; } }
+      .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer {
+        display: flex;
+        position: relative;
+        height: 100px;
+        width: 104px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px; }
+        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar1 {
+          width: 8px;
+          height: 100px;
+          background: #dddddd;
+          border-radius: 8px;
+          position: absolute;
+          bottom: 0; }
+          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar1 .barFill1 {
+            width: 8px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 0; }
+        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar2 {
+          width: 8px;
+          height: 100px;
+          background: #dddddd;
+          border-radius: 8px;
+          position: absolute;
+          bottom: 0;
+          left: 16px; }
+          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar2 .barFill2 {
+            width: 8px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 0; }
+        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar3 {
+          width: 8px;
+          height: 100px;
+          background: #dddddd;
+          border-radius: 8px;
+          position: absolute;
+          bottom: 0;
+          left: 32px; }
+          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar3 .barFill3 {
+            width: 8px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 0; }
+        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar4 {
+          width: 8px;
+          height: 100px;
+          background: #dddddd;
+          border-radius: 8px;
+          position: absolute;
+          bottom: 0;
+          left: 48px; }
+          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar4 .barFill4 {
+            width: 8px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 0; }
+        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar5 {
+          width: 8px;
+          height: 100px;
+          background: #dddddd;
+          border-radius: 8px;
+          position: absolute;
+          bottom: 0;
+          left: 64px; }
+          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar5 .barFill5 {
+            width: 8px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 0; }
+        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar6 {
+          width: 8px;
+          height: 100px;
+          background: #dddddd;
+          border-radius: 8px;
+          position: absolute;
+          bottom: 0;
+          left: 80px; }
+          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar6 .barFill6 {
+            width: 8px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 0; }
+        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar7 {
+          width: 8px;
+          height: 100px;
+          background: #dddddd;
+          border-radius: 8px;
+          position: absolute;
+          bottom: 0;
+          left: 96px; }
+          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar7 .barFill7 {
+            width: 8px;
+            border-radius: 8px;
+            position: absolute;
+            bottom: 0; }
+    .pageContainer .statsContainer .activePlans {
+      width: 160px;
+      text-align: center;
+      background: #ffffff;
+      border-radius: 6px;
+      margin: 0 16px 0 0;
+      border-right: 1px solid #eeeeee; }
+      @media only screen and (max-width: 1024px) {
+        .pageContainer .statsContainer .activePlans {
+          margin: 0;
+          border-radius: 0; } }
+      @media only screen and (max-width: 922px) {
+        .pageContainer .statsContainer .activePlans {
+          width: 100%; } }
+    .pageContainer .statsContainer .nextPayment {
+      flex: 1;
+      background: #ffffff;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+      display: block; }
+      @media only screen and (max-width: 1024px) {
+        .pageContainer .statsContainer .nextPayment {
+          border-radius: 0; } }
+      @media only screen and (max-width: 922px) {
+        .pageContainer .statsContainer .nextPayment {
+          display: none; } }
+      .pageContainer .statsContainer .nextPayment h6 {
+        padding-left: 50px; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .statsContainer .nextPayment h6 {
+            padding-left: 0;
+            text-align: center; } }
+      .pageContainer .statsContainer .nextPayment h1 {
+        padding-left: 50px; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .statsContainer .nextPayment h1 {
+            padding-left: 0;
+            text-align: center; } }
+    .pageContainer .statsContainer .paymentDate {
+      flex: 1;
+      background: #ffffff;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+      text-align: center;
+      display: block; }
+      @media only screen and (max-width: 1024px) {
+        .pageContainer .statsContainer .paymentDate {
+          border-radius: 0; } }
+      @media only screen and (max-width: 922px) {
+        .pageContainer .statsContainer .paymentDate {
+          display: none; } }
+      .pageContainer .statsContainer .paymentDate h2 {
+        font-size: 22px;
+        font-weight: 200;
+        padding-top: 70px;
+        color: #0080FF; }
+  .pageContainer .mobileStatsWrapper {
+    display: none; }
+    @media only screen and (max-width: 922px) {
+      .pageContainer .mobileStatsWrapper {
+        display: block; } }
+    .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer {
+      height: 160px;
+      display: flex; }
+      .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol {
+        flex: 1;
+        background: #ffffff; }
+        .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol h6 {
+          font-size: 16px;
+          font-weight: 200;
+          padding: 38px 0 10px 0;
+          color: #8F98A0;
+          text-align: center; }
+        .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol h1 {
+          font-size: 40px;
+          font-weight: 400;
+          text-align: center; }
+        @media only screen and (max-width: 922px) {
+          .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol {
+            border-top: 1px solid #eeeeee; } }
+      .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol {
+        flex: 1;
+        border-top: 1px solid #eeeeee;
+        background: #ffffff; }
+    .pageContainer .mobileStatsWrapper .mobilePaymentContainer {
+      display: flex;
+      height: 160px; }
+      .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentLeftCol {
+        flex: 1;
+        background: #ffffff;
+        border-top: 1px solid #eeeeee; }
+        .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentLeftCol h6 {
+          font-size: 16px;
+          font-weight: 200;
+          padding: 38px 0 10px 0;
+          color: #8F98A0;
+          text-align: center; }
+        .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentLeftCol h1 {
+          font-size: 40px;
+          font-weight: 400;
+          text-align: center; }
+      .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol {
+        flex: 1;
+        background: #ffffff;
+        border-top: 1px solid #eeeeee; }
+        .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol h6 {
+          font-size: 16px;
+          font-weight: 200;
+          padding: 38px 0 10px 0;
+          color: #8F98A0;
+          text-align: center; }
+        .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol h1 {
+          font-size: 28px;
+          font-weight: 400;
+          text-align: center;
+          padding-top: 6px;
+          color: #0080FF; }
+  .pageContainer .pageTitle {
+    padding: 70px 0 50px 0;
+    font-size: 32px;
+    color: #243646;
+    font-weight: 400; }
+  .pageContainer .columnWrapper {
+    display: flex;
+    flex-direction: row; }
+    @media only screen and (max-width: 1024px) {
+      .pageContainer .columnWrapper {
+        flex-direction: column; } }
+    .pageContainer .columnWrapper .leftContainer {
+      display: flex;
+      width: 100%; }
+      @media only screen and (max-width: 600px) {
+        .pageContainer .columnWrapper .leftContainer {
+          flex-direction: column; } }
+      .pageContainer .columnWrapper .leftContainer .one {
+        flex: 1;
+        background: blue;
+        margin: 0 8px 0 0; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .columnWrapper .leftContainer .one {
+            margin: 0 8px 8px 0; } }
+        @media only screen and (max-width: 600px) {
+          .pageContainer .columnWrapper .leftContainer .one {
+            margin: 0 0 16px 0; } }
+      .pageContainer .columnWrapper .leftContainer .two {
+        flex: 1;
+        background: red;
+        margin: 0 8px 0 8px; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .columnWrapper .leftContainer .two {
+            margin: 0 0 8px 8px; } }
+        @media only screen and (max-width: 600px) {
+          .pageContainer .columnWrapper .leftContainer .two {
+            margin: 0 0 16px 0; } }
+    .pageContainer .columnWrapper .rightContainer {
+      display: flex;
+      width: 100%; }
+      @media only screen and (max-width: 600px) {
+        .pageContainer .columnWrapper .rightContainer {
+          flex-direction: column; } }
+      .pageContainer .columnWrapper .rightContainer .three {
+        background: green;
+        flex: 1;
+        margin: 0 8px 0 8px; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .columnWrapper .rightContainer .three {
+            margin: 8px 8px 0 0; } }
+        @media only screen and (max-width: 600px) {
+          .pageContainer .columnWrapper .rightContainer .three {
+            margin: 0 0 16px 0; } }
+      .pageContainer .columnWrapper .rightContainer .four {
+        background: pink;
+        flex: 1;
+        margin: 0 0 0 8px; }
+        @media only screen and (max-width: 1024px) {
+          .pageContainer .columnWrapper .rightContainer .four {
+            margin-top: 8px; } }
+        @media only screen and (max-width: 600px) {
+          .pageContainer .columnWrapper .rightContainer .four {
+            margin: 0 0 16px 0; } }
+    .pageContainer .columnWrapper .cardContainer {
+      background: #ffffff;
+      padding: 40px 50px; }
+      .pageContainer .columnWrapper .cardContainer .defaultLoadImg {
+        width: 64px;
+        height: 64px;
+        background: #EAEAEA;
+        border-radius: 50%; }
+      .pageContainer .columnWrapper .cardContainer .defaultLineOne {
+        max-width: 65px;
+        height: 13px;
+        background: #D8D8D8;
+        border-radius: 6px;
+        margin: 30px 0 15px 0; }
+      .pageContainer .columnWrapper .cardContainer .defaultLineTwo {
+        max-width: 228px;
+        height: 20px;
+        background: #E4E4E4;
+        border-radius: 10px;
+        margin: 15px 0; }
+      .pageContainer .columnWrapper .cardContainer .defaultLineThree {
+        max-width: 103px;
+        height: 13px;
+        background: #F2f2f2;
+        border-radius: 10px;
+        margin: 15px 0 55px 0; }
+      .pageContainer .columnWrapper .cardContainer .defaultLineFour {
+        max-width: 120px;
+        height: 13px;
+        background: #D8D8D8;
+        border-radius: 6px; }
+  .pageContainer .productsContainer {
+    display: flex;
+    flex-direction: row; }
+    @media only screen and (max-width: 1024px) {
+      .pageContainer .productsContainer {
+        flex-direction: column; } }
+    .pageContainer .productsContainer .productsLeftColumn {
+      flex: 1; }
+      .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer {
+        display: flex;
+        flex-direction: row; }
+        .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .security {
+          flex: 1;
+          height: 324px;
+          background: #ffffff;
+          margin: 0 8px 0 0; }
+          @media only screen and (max-width: 1024px) {
+            .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .security {
+              margin: 0 8px 8px 0; } }
+          @media only screen and (max-width: 600px) {
+            .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .security {
+              margin: 0 0 8px 0; } }
+        .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .privacy {
+          flex: 1;
+          height: 324px;
+          background: #ffffff;
+          margin: 0 8px 0 8px; }
+          @media only screen and (max-width: 1024px) {
+            .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .privacy {
+              margin: 0 0 8px 8px; } }
+          @media only screen and (max-width: 600px) {
+            .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .privacy {
+              margin: 8px 0 8px 0; } }
+        @media only screen and (max-width: 600px) {
+          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer {
+            flex-direction: column; } }
+        .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer {
+          background: #ffffff;
+          padding: 40px 50px; }
+          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLoadImg {
+            width: 64px;
+            height: 64px;
+            background: #EAEAEA;
+            border-radius: 50%; }
+          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineOne {
+            max-width: 65px;
+            height: 13px;
+            background: #D8D8D8;
+            border-radius: 6px;
+            margin: 30px 0 15px 0; }
+          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineTwo {
+            max-width: 228px;
+            height: 20px;
+            background: #E4E4E4;
+            border-radius: 10px;
+            margin: 15px 0; }
+          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineThree {
+            max-width: 103px;
+            height: 13px;
+            background: #F2f2f2;
+            border-radius: 10px;
+            margin: 15px 0 55px 0; }
+          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineFour {
+            max-width: 120px;
+            height: 13px;
+            background: #D8D8D8;
+            border-radius: 6px; }
+    .pageContainer .productsContainer .productsRightColumn {
+      flex: 1; }
+  .pageContainer .domainInfoContainer {
+    display: flex;
+    height: 152px; }
+    @media only screen and (max-width: 1024px) {
+      .pageContainer .domainInfoContainer {
+        margin: 8px 0 0 -8px; } }
+    .pageContainer .domainInfoContainer .domainIcon {
+      width: 152px;
+      background: #ffffff;
+      margin: 0 0 0 8px; }
+    .pageContainer .domainInfoContainer .domainBodyInfo {
+      flex: 1;
+      background: #ffffff;
+      margin: 0 0 0 8px; }
+      .pageContainer .domainInfoContainer .domainBodyInfo h6 {
+        font-size: 16px;
+        font-weight: 200; }
+      .pageContainer .domainInfoContainer .domainBodyInfo h3 {
+        font-size: 22px;
+        font-weight: 200; }
+      .pageContainer .domainInfoContainer .domainBodyInfo .defaultLineFive {
+        background: #D8D8D8;
+        max-width: 103px;
+        height: 12px;
+        border-radius: 6px;
+        margin: 54px 0 11px 35px; }
+      .pageContainer .domainInfoContainer .domainBodyInfo .defaultLineSix {
+        background: #D8D8D8;
+        max-width: 225px;
+        height: 20px;
+        border-radius: 20px;
+        margin: 0 0 0 35px; }
+    .pageContainer .domainInfoContainer .manageDomain {
+      width: 178px;
+      background: #ffffff; }
+      .pageContainer .domainInfoContainer .manageDomain .defaultLineSeven {
+        height: 12px;
+        max-width: 115px;
+        background: #D8D8D8;
+        border-radius: 6px;
+        margin: 70px 0 0 0; }
+  .pageContainer .domainInfoMarginBottom {
+    margin-bottom: 20px; }
