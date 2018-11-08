@@ -5,17 +5,58 @@ $primaryColor:#0080FF;
 $mobileBorder:#eeeeee; 
 $bgColor:#EAEDF0;
 
-.modalBgContainer {
-  height:100%;
-  width:100%;
-  background:black;
-  position:absolute;
-  z-index:100;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
+@font-face{
+  font-family: 'MyWebFont';
+  src: url('WebFont.eot');
+  src: url('WebFont.eot?#iefix') format('embedded-opentype'),
+  url('WebFont.woff') format('woff'),
+  url('WebFont.ttf') format('truetype'),
+  url('WebFont.svg#webfont') format('svg');
+  }
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url(../fonts/GoogleSans-Regular.ttf);
+  font-weight: normal;
 }
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url(../fonts/GoogleSans-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url(../fonts/GoogleSans-Bold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url(../fonts/GoogleSans-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url(../fonts/GoogleSans-MediumItalic.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Google Sans';
+  src: url(../fonts/GoogleSans-BoldItalic.ttf);
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+* { font-family: 'WebFont', Arial, sans-serif; }
+
+
 
 .bgHeaderColor {
   background:#006CD6;
@@ -791,7 +832,11 @@ p, h1, h2, h3, h4, h5, h6 {
       }
       .one {
         flex:1;
-        background:blue;
+        background:#3399FF;
+        border-radius:6px;
+        // background:url(../images/wp-bg.svg);
+        // background-repeat: no-repeat;
+        // background-size:cover;
         margin:0 8px 0 0;
         @media only screen and (max-width: 1024px) {
           margin:0 8px 8px 0;
@@ -802,8 +847,9 @@ p, h1, h2, h3, h4, h5, h6 {
       }
       .two {
         flex:1;
-        background:red;
+        background:#203243;
         margin:0 8px 0 8px;
+        border-radius:6px;
         @media only screen and (max-width: 1024px) {
           margin:0 0 8px 8px;
         }
@@ -820,9 +866,10 @@ p, h1, h2, h3, h4, h5, h6 {
         flex-direction:column;
       }
       .three {
-        background:green;
+        background:#00BB67;
         flex:1;
         margin:0 8px 0 8px;
+        border-radius:6px;
          @media only screen and (max-width: 1024px) {
           margin:8px 8px 0 0;
         }
@@ -831,8 +878,9 @@ p, h1, h2, h3, h4, h5, h6 {
         }
       }
       .four {
-        background:pink;
+        background-image: linear-gradient(to top right, #362F95, #211C5B);
         flex:1;
+        border-radius:6px;
         margin:0 0 0 8px;
          @media only screen and (max-width: 1024px) {
            margin-top:8px;
@@ -845,6 +893,7 @@ p, h1, h2, h3, h4, h5, h6 {
     .cardContainer {
       background:$white;
       padding:40px 50px;
+      border-radius:6px;
       .defaultLoadImg {
         width:64px;
         height:64px;
@@ -877,6 +926,36 @@ p, h1, h2, h3, h4, h5, h6 {
         height:13px;
         background:#D8D8D8;
         border-radius:6px;
+      }
+    }
+    .cardContainerInfo {
+      // padding:32px 48px 42px 48px;
+      // padding:40px;
+      color:$white;
+      .cardIcon {
+        margin:32px 45px 45px 45px;
+      }
+      h5 {
+        font-size:16px;
+        font-weight:200;
+        margin:0 45px 10px 45px;
+        // padding:45px 0 10px 0;
+      }
+      h3 {
+        font-size:22px;
+        font-weight:200;
+        margin:0 45px 60px 45px;
+        // padding:0 0 60px 0;
+        // white-space:wrap; 
+        // max-width: 200px; 
+        // overflow: hidden;
+        // text-overflow: ellipsis; 
+      }
+      h4 {
+        font-size:16px;
+        font-weight:200;
+        margin:0 45px 45px 45px;
+
       }
     }
   }
@@ -927,7 +1006,7 @@ p, h1, h2, h3, h4, h5, h6 {
            flex-direction:column;
          }
         
-          .cardContainer {
+    .cardContainer {
       background:$white;
       padding:40px 50px;
       .defaultLoadImg {
@@ -1032,9 +1111,9 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   /*  My Product ENDS */
+
+     
   
-
-
 }
 
 

@@ -83,6 +83,12 @@ $(function() {
     .to('.barFill6', .2, { background: '#0080FF', height: '53px'})
     .to('.barFill7', .2, { background: '#0080FF', height: '79px'});
 
+    var defaultImg = new TimelineMax();
+
+        // defaultImg.from('.defaultCard', 1, { opacity:0})
+    
+    // $('.defaultCard')
+
 
 
  
