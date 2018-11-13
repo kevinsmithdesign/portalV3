@@ -68,8 +68,7 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 113px;
   max-width: 1396px;
   margin-left: auto;
-  margin-right: auto;
-  background: #006CD6; }
+  margin-right: auto; }
 
 .navContainer .hamburgerMenu {
   display: none; }
@@ -293,8 +292,7 @@ p, h1, h2, h3, h4, h5, h6 {
     flex-direction: column; } }
 
 .pageContainer .userWelcomeContainer .userWelcome {
-  flex: 1;
-  background: #006CD6; }
+  flex: 1; }
 
 .pageContainer .userWelcomeContainer .userWelcome h1 {
   font-size: 48px;
@@ -307,19 +305,14 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 28px;
   color: #ffffff;
   font-weight: 200;
-  padding: 0 40px 38px 20px;
+  padding: 0 40px 100px 20px;
   max-width: 466px; }
 
 .pageContainer .userWelcomeContainer .testOne {
-  width: 36px;
-  background: #006CD6; }
+  width: 36px; }
 
 .pageContainer .userWelcomeContainer .userAlert {
-  flex: 1;
-  background: #006CD6; }
-
-.pageContainer .userWelcomeContainer .userAlert .alertContainer {
-  margin-bottom: 134px; }
+  flex: 1; }
 
 .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgOne {
   background: #0080FF;
@@ -395,8 +388,7 @@ p, h1, h2, h3, h4, h5, h6 {
     display: none; } }
 
 .pageContainer .userWelcomeContainer .testTwo {
-  width: 20px;
-  background: #006CD6; }
+  width: 20px; }
 
 .pageContainer .statsContainer {
   display: flex;
@@ -1244,6 +1236,12 @@ p, h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 8px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px; }
+
+.pageContainer .domainInfoContainer .domainIcon .defaultLoad {
+  width: 64px;
+  height: 64px;
+  background: #EAEAEA;
+  border-radius: 50%; }
 
 .pageContainer .domainInfoContainer .domainIcon .dotComIcon {
   display: block;

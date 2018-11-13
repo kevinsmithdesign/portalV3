@@ -113,7 +113,7 @@ p, h1, h2, h3, h4, h5, h6 {
     max-width:1396px;
     margin-left:auto;
     margin-right:auto;
-    background:#006CD6;
+    // background:#006CD6;
     .hamburgerMenu {
       display:none;
       // background:green;
@@ -339,7 +339,7 @@ p, h1, h2, h3, h4, h5, h6 {
     .userWelcome {
       flex:1;
       // background:red;
-      background:#006CD6;
+      // background:#006CD6;
       h1 {
         font-size:48px;
         font-weight: 100;
@@ -352,7 +352,7 @@ p, h1, h2, h3, h4, h5, h6 {
         line-height:28px;
         color:$white;
         font-weight:200;
-        padding:0 40px 38px 20px;
+        padding:0 40px 100px 20px;
         max-width:466px;
 
       }
@@ -361,15 +361,15 @@ p, h1, h2, h3, h4, h5, h6 {
       // width:20px;
       width:36px;
       // background:red;
-      background:#006CD6;
+      // background:#006CD6;
     }
     .userAlert {
       flex:1;
       // background:green;
-      background:#006CD6;
+      // background:#006CD6;
 
       .alertContainer {
-        margin-bottom:134px;
+        // margin-bottom:134px;
         .alertbgOne {
           background:#0080FF;
             height:82px;
@@ -458,7 +458,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }  
   .testTwo {
     width:20px;
-    background:#006CD6;
+    // background:#006CD6;
     // background:orange;
   }   
       
@@ -1316,6 +1316,12 @@ p, h1, h2, h3, h4, h5, h6 {
       margin:0 0 0 8px;
       border-top-left-radius:6px;
       border-bottom-left-radius:6px;
+      .defaultLoad {
+        width: 64px;
+        height: 64px;
+        background: #EAEAEA;
+        border-radius: 50%;
+      }
       .dotComIcon {
         display:block;
         margin-left:auto;
