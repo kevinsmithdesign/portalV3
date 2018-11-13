@@ -5,14 +5,6 @@ $primaryColor:#0080FF;
 $mobileBorder:#eeeeee; 
 $bgColor:#EAEDF0;
 
-@font-face{
-  font-family: 'MyWebFont';
-  src: url('WebFont.eot');
-  src: url('WebFont.eot?#iefix') format('embedded-opentype'),
-  url('WebFont.woff') format('woff'),
-  url('WebFont.ttf') format('truetype'),
-  url('WebFont.svg#webfont') format('svg');
-  }
 
 @font-face {
   font-family: 'Google Sans';
@@ -53,8 +45,15 @@ $bgColor:#EAEDF0;
   font-style: italic;
 }
 
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Google Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f5f8fb;
+}
 
-* { font-family: 'WebFont', Arial, sans-serif; }
 
 
 
@@ -71,8 +70,8 @@ $bgColor:#EAEDF0;
   background:$bgColor;
   // position:relative;
   // z-index:-100;
-  height:75px;
-  margin-top:-75px;
+  height:76px;
+  margin-top:-76px;
 }
 
 *:focus {
@@ -239,7 +238,7 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-left:auto;
     margin-right:auto;
     // background:purple;
-    background:$bgColor;
+    // background:$bgColor;
     position:relative;
 
   .navDropdownContainer {
@@ -343,9 +342,10 @@ p, h1, h2, h3, h4, h5, h6 {
       background:#006CD6;
       h1 {
         font-size:48px;
-        font-weight:200;
+        font-weight: 100;
         color:$white;
         padding:0 0 20px 20px;
+
       }
       p {
         font-size:22px;
@@ -358,7 +358,8 @@ p, h1, h2, h3, h4, h5, h6 {
       }
     }
     .testOne {
-      width:20px;
+      // width:20px;
+      width:36px;
       // background:red;
       background:#006CD6;
     }
@@ -413,6 +414,7 @@ p, h1, h2, h3, h4, h5, h6 {
             background:$white;
             border-top-left-radius:6px;
             border-bottom-left-radius:6px;
+            // background:yellow;
             .warningIcon {
               width:50px;
               padding:20px;
@@ -424,11 +426,17 @@ p, h1, h2, h3, h4, h5, h6 {
             font-size:16px;
             font-weight:200;
             // line-height:100px;
+            // background:green;
+            flex:1;
             color:#4A4A4A;
             padding:40px 0;
           }
           .alertBackup {
-            // padding:0 0 0 60px;
+            // background:red;
+            border-top-right-radius:6px;
+            border-bottom-right-radius:6px;
+            padding:40px 20px 0 20px;
+            text-align:center;
             // line-height:100px;
             .click {
               cursor:pointer;
@@ -436,6 +444,9 @@ p, h1, h2, h3, h4, h5, h6 {
               color:#4A4A4A;
               font-size:16px;
               text-decoration:none;
+            }
+            @include Phone {
+              display:none;
             }
           }
         }
@@ -456,7 +467,13 @@ p, h1, h2, h3, h4, h5, h6 {
   .statsContainer {
     display:flex;
     height:160px;
-    margin-top:-84px;
+    margin:-54px 20px 0 20px;
+    @include Desktop {
+      margin:-54px 0 0 0;
+    }
+    @include Tablet {
+      margin:-54px 20px 0 20px;
+    }
     h6 {
       font-size:16px;
       font-weight:200;
@@ -464,7 +481,7 @@ p, h1, h2, h3, h4, h5, h6 {
       color:#8F98A0;
     }
     h1 {
-      font-size:48px;
+      font-size:40px;
       font-weight:400;
       @include Desktop {
         font-size:40px;
@@ -517,14 +534,14 @@ p, h1, h2, h3, h4, h5, h6 {
           // border-right:1px solid #eeeeee;
         }
       h6 {
-        padding-left:50px;
+        padding-left:42px;
         @include Desktop {
           padding-left:0;
           text-align:center;
         }
       }
       h1 {
-        padding-left:50px;
+        padding-left:40px;
         @include Desktop {
           padding-left:0;
           text-align:center;
@@ -692,14 +709,14 @@ p, h1, h2, h3, h4, h5, h6 {
         display:none;
       }
       h6 {
-        padding-left:50px;
+        padding-left:40px;
         @include Desktop {
           padding-left:0;
           text-align:center;
         }
       }
       h1 {
-        padding-left:50px;
+        padding-left:40px;
         @include Desktop {
           padding-left:0;
           text-align:center;
@@ -737,6 +754,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .mobileVistorStatsContainer {
     height:160px;
     display:flex;
+    margin:0 20px;
     .mobileVistorsLeftCol {
       flex:1;
       background:$white;
@@ -762,12 +780,126 @@ p, h1, h2, h3, h4, h5, h6 {
       flex:1;
       border-top:1px solid $mobileBorder;
       background:$white;
+      .graphContainer {
+        display:flex;
+        position:relative;
+        height:100px;
+        width:104px;
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:30px;
+        .bar1 {
+          width:8px;
+          height:100px;
+          background:#dddddd;
+          border-radius:8px;
+          position:absolute;
+          bottom:0;
+          .barFill1 {
+            width:8px;
+            border-radius:8px;
+            position:absolute;
+            bottom:0;
+          }
+        }
+        .bar2 {
+          width:8px;
+          height:100px;
+          background:#dddddd;
+          border-radius:8px;
+          position:absolute;
+          bottom:0;
+          left:16px;
+          .barFill2 {
+            width:8px;
+            border-radius:8px;
+            position:absolute;
+            bottom:0;
+          }
+        }
+        .bar3 {
+          width:8px;
+          height:100px;
+          background:#dddddd;
+          border-radius:8px;
+          position:absolute;
+          bottom:0;
+          left:32px;
+          .barFill3 {
+            width:8px;
+            border-radius:8px;
+            position:absolute;
+            bottom:0;
+          }
+        }
+        .bar4 {
+          width:8px;
+          height:100px;
+          background:#dddddd;
+          border-radius:8px;
+          position:absolute;
+          bottom:0;
+          left:48px;
+          .barFill4 {
+            width:8px;
+            border-radius:8px;
+            position:absolute;
+            bottom:0;
+          }
+        }
+        .bar5 {
+          width:8px;
+          height:100px;
+          background:#dddddd;
+          border-radius:8px;
+          position:absolute;
+          bottom:0;
+          left:64px;
+          .barFill5 {
+            width:8px;
+            border-radius:8px;
+            position:absolute;
+            bottom:0;
+          }
+        }
+        .bar6 {
+          width:8px;
+          height:100px;
+          background:#dddddd;
+          border-radius:8px;
+          position:absolute;
+          bottom:0;
+          left:80px;
+           .barFill6 {
+            width:8px;
+            border-radius:8px;
+            position:absolute;
+            bottom:0;
+          }
+        }
+        .bar7 {
+          width:8px;
+          height:100px;
+          background:#dddddd;
+          border-radius:8px;
+          position:absolute;
+          bottom:0;
+          left:96px;
+           .barFill7 {
+            width:8px;
+            border-radius:8px;
+            position:absolute;
+            bottom:0;
+          }
+        }
+      }
     }
   }
   
   .mobilePaymentContainer {
     display:flex;
     height:160px;
+    margin:0 20px;
     .mobilePaymentLeftCol {
       flex:1;
       background:$white;
@@ -803,6 +935,10 @@ p, h1, h2, h3, h4, h5, h6 {
         text-align:center;
         padding-top:6px;
         color:$primaryColor;
+        @include Phone {
+          font-size:18px;
+          padding-top:15px;
+        }
       }
     }
   }
@@ -810,10 +946,10 @@ p, h1, h2, h3, h4, h5, h6 {
   /* Mobile Stats ENDS */
 
   .pageTitle {
-    padding:70px 0 50px 0;
+    padding:70px 20px 50px 20px;
     font-size:32px;
     color:#243646;
-    font-weight:400;
+    font-weight:bold;
   }
 
  /* My Hosting Plans Starts */
@@ -821,6 +957,7 @@ p, h1, h2, h3, h4, h5, h6 {
   .columnWrapper {
     display:flex;
     flex-direction:row;
+    margin:0 20px;
     @media only screen and (max-width: 1024px) {
       flex-direction:column;
     }
@@ -932,8 +1069,13 @@ p, h1, h2, h3, h4, h5, h6 {
       // padding:32px 48px 42px 48px;
       // padding:40px;
       color:$white;
+      // .siteLockLogo {
+      //   width:120px;
+      //   margin: 32px 45px 32px 45px;
+      // }
       .cardIcon {
-        margin:32px 45px 45px 45px;
+        margin:32px 45px 32px 45px;
+        width:60px;
       }
       h5 {
         font-size:16px;
@@ -943,19 +1085,97 @@ p, h1, h2, h3, h4, h5, h6 {
       }
       h3 {
         font-size:22px;
-        font-weight:200;
+        font-weight:bold;
         margin:0 45px 60px 45px;
         // padding:0 0 60px 0;
         // white-space:wrap; 
-        // max-width: 200px; 
-        // overflow: hidden;
-        // text-overflow: ellipsis; 
+        max-width: 150px; 
+        overflow: hidden;
+        text-overflow: ellipsis; 
+      }
+      h2 {
+        font-size:22px;
+        font-weight:bold;
+        padding:36px 36px 20px 36px;
       }
       h4 {
         font-size:16px;
         font-weight:200;
         margin:0 45px 45px 45px;
+        cursor:pointer;
 
+      }
+      p {
+        font-size:16px;
+        padding:0 36px 36px 36px;
+      }
+      button {
+        width:165px;
+        height:48px;
+        border-radius:48px;
+        background:#FFA800;
+        color:#211C5B;
+        font-size:16px;
+        border:none;
+        cursor:pointer;
+        margin:0 0 45px 36px;
+      }
+    }
+    .cardContainerInfoMp {
+      // .marketPlaceIcon {
+      //   // margin:32px 45px 32px 45px;
+      // }
+      .siteLockIcon {
+        height:40px;
+        margin:32px 45px 32px 45px;
+      }
+      .seoIcon {
+        height:45px;
+        margin:30px 45px;
+      }
+      .ctctIcon {
+        height:25px;
+        margin:40px 45px;
+      }
+      h5 {
+        font-size:16px;
+        font-weight:200;
+        margin:0 45px 10px 45px;
+        color:$white;
+        // padding:45px 0 10px 0;
+      }
+      h3 {
+        font-size:22px;
+        font-weight:bold;
+        color:$white;
+        margin:0 45px 60px 45px;
+      }
+      .hide {
+        color:transparent;
+      }
+      h2 {
+        font-size:22px;
+        font-weight:bold;
+        color:$white;
+        padding:36px 45px 20px 45px;
+      }
+      h4 {
+        font-size:16px;
+        font-weight:200;
+        color:$white;
+        margin:0 45px 45px 45px;
+        cursor:pointer;
+      }
+      button {
+        background:#FFA800;
+        border:none;
+        color:#211C5B;
+        border-radius:24px;
+        height:48px;
+        // padding:0 40px;
+        width:165px;
+        margin:0 45px 45px 45px;
+        cursor:pointer;
       }
     }
   }
@@ -966,21 +1186,50 @@ p, h1, h2, h3, h4, h5, h6 {
   .productsContainer {
     display:flex;
     flex-direction:row;
+    margin:0 20px;
     @media only screen and (max-width: 1024px) {
        flex-direction:column;
      }
+     .cardIcon {
+      margin:32px 45px 32px 45px;
+      width:60px;
+    }
+
     .productsLeftColumn {
       flex:1;
       // background:red;
       .securityPrivacyContainer {
         display:flex;
         flex-direction:row;
+        h6 {
+          font-size:16px;
+          font-weight:200;
+          margin:0 45px 8px 45px;
+        }
+        h3 {
+          font-size:22px;
+          font-weight:bold;
+          margin:0 45px 8px 45px;
+        }
+        .site {
+          font-size:16px;
+          font-weight:200;
+          color:#4F5E6B;
+          margin:0 45px 48px 45px;
+        }
+        .manageProduct {
+          font-size:16px;
+          font-weight:200;
+          color:#4F5E6B;
+          margin:0 45px 0 45px;
+        }
         .security {
           flex:1;
           height:324px;
           background:$white;
-          // background:red;
           margin:0 8px 0 0;
+          border-radius:6px;
+
          @media only screen and (max-width: 1024px) {
             margin:0 8px 8px 0;
           }
@@ -991,9 +1240,11 @@ p, h1, h2, h3, h4, h5, h6 {
         .privacy {
           flex:1;
           height:324px;
-          // background:lightgreen;
+          background:lightgreen;
           background:$white;
           margin:0 8px 0 8px;
+          border-radius:6px;
+
           @media only screen and (max-width: 1024px) {
             margin:0 0 8px 8px;
           }
@@ -1063,18 +1314,30 @@ p, h1, h2, h3, h4, h5, h6 {
       // background:orange;
       background:$white;
       margin:0 0 0 8px;
+      border-top-left-radius:6px;
+      border-bottom-left-radius:6px;
+      .dotComIcon {
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:65px;
+      }
     }
     .domainBodyInfo {
       flex:1;
       background:$white;
-      margin:0 0 0 8px;
+      // margin:0 0 0 8px;
       h6 {
         font-size:16px;
         font-weight:200;
+        margin:48px 0 0 0;
       }
       h3 {
         font-size:22px;
         font-weight:200;
+        max-width: 170px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .defaultLineFive {
         background:#D8D8D8;
@@ -1090,18 +1353,35 @@ p, h1, h2, h3, h4, h5, h6 {
         border-radius:20px;
         margin:0 0 0 35px;
       }
+      @media only screen and (max-width: 600px) {
+        border-top-right-radius:6px;
+        border-bottom-right-radius:6px;
+      }
     }
     .manageDomain {
       // flex:1;
       width:178px;
       background:$white;
       // background:green;
+      border-bottom-right-radius:6px;
+      border-top-right-radius:6px;
+      display:block;
+      p {
+        line-height:152px;
+        color:4F5E6B;
+        font-size:16px;
+        font-weight:200;
+        padding:0 20px;
+      }
       .defaultLineSeven {
         height:12px;
         max-width:115px;
         background:#D8D8D8;
         border-radius:6px;
         margin:70px 0 0 0;
+      }
+      @media only screen and (max-width: 600px) {
+        display:none;
       }
     }
   }
@@ -1112,8 +1392,138 @@ p, h1, h2, h3, h4, h5, h6 {
 
   /*  My Product ENDS */
 
-     
+  /* Market Place STARTS */
+
+  .columnWrapper {
+    display:flex;
+    flex-direction:row;
+    @media only screen and (max-width: 1024px) {
+      flex-direction:column;
+    }
+    .leftContainer {
+      display:flex;
+      width:100%;
+      @media only screen and (max-width: 600px) {
+        flex-direction:column;
+      }
+      .five {
+        flex:1;
+        background:#C31E1E;
+        margin:0 8px 0 0;
+        border-radius:6px;
+        @media only screen and (max-width: 1024px) {
+          margin:0 8px 8px 0;
+        }
+        @media only screen and (max-width: 600px) {
+          margin:0 0 16px 0;
+        }
+      }
+      .six {
+        flex:1;
+        background:#005CB8;
+        border-radius:6px;
+        margin:0 8px 0 8px;
+        @media only screen and (max-width: 1024px) {
+          margin:0 0 8px 8px;
+        }
+         @media only screen and (max-width: 600px) {
+          margin:0 0 16px 0;
+        }
+      }
+    }
   
+    .rightContainer {
+      display:flex;
+      width:100%;
+      @media only screen and (max-width: 600px) {
+        flex-direction:column;
+      }
+      .seven {
+        background:#3C4A57;
+        flex:1;
+        border-radius:6px;
+        margin:0 8px 0 8px;
+         @media only screen and (max-width: 1024px) {
+          margin:8px 8px 0 0;
+        }
+        @media only screen and (max-width: 600px) {
+          margin:0 0 16px 0;
+        }
+      }
+      .eight {
+        background-image: linear-gradient(to top right, #006CD6, #0080FF);
+        flex:1;
+        margin:0 0 0 8px;
+        border-radius:6px;
+        @media only screen and (max-width: 1024px) {
+           margin-top:8px;
+        }
+        @media only screen and (max-width: 600px) {
+          margin:0 0 16px 0;
+        }
+      }
+    }
+    .cardContainer {
+      background:$white;
+      padding:40px 50px;
+      .defaultLoadImg {
+        width:64px;
+        height:64px;
+        background:#EAEAEA;
+        border-radius:50%;
+      }
+      .defaultLineOne {
+        max-width:65px;
+        height:13px;
+        background:#D8D8D8;
+        border-radius:6px;
+        margin:30px 0 15px 0;
+      }
+      .defaultLineTwo {
+        max-width:228px;
+        height:20px;
+        background:#E4E4E4;
+        border-radius:10px;
+        margin:15px 0;
+      }
+      .defaultLineThree {
+        max-width:103px;
+        height:13px;
+        background:#F2f2f2;
+        border-radius:10px;
+        margin:15px 0 55px 0;
+      }
+      .defaultLineFour {
+        max-width:120px;
+        height:13px;
+        background:#D8D8D8;
+        border-radius:6px;
+      }
+    }
+  }
+
+  .marketPlaceMargin {
+    margin-bottom:100px;
+  }
+
+  /* Market Place ENDS */
+
+  // .test {
+  //   background:black;
+  //   border:1px solid red;
+  //   .siteLockIcon {
+  //     height:35px;
+  //   }
+  //   .ctctIcon {
+  //     height:30px;
+  //   }
+  //   .seoIcon {
+  //     height:45px;
+  //   }
+  // }
+
+
+      
 }
 
 

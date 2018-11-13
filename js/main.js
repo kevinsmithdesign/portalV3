@@ -85,9 +85,28 @@ $(function() {
 
     var defaultImg = new TimelineMax();
 
-        // defaultImg.from('.defaultCard', 1, { opacity:0})
-    
+    // defaultImg.from('.defaultCard', 1, { opacity:0})
     // $('.defaultCard')
+
+    // defaultImg.to('.defaultCard', 3, { opacity: 0 })
+
+    function showDefaultCard() {
+        $('.defaultCard').show();
+        $('.dataLoadedCard').hide();
+    }
+
+    function showDataLoaded() {
+        $('.defaultCard').hide();
+        $('.dataLoadedCard').show();
+    }
+
+    setTimeout(showDefaultCard, 0);
+    setTimeout(showDataLoaded, 2000)
+
+ 
+
+
+    
 
 
 

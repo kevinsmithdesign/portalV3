@@ -1,9 +1,4 @@
 @font-face {
-  font-family: 'MyWebFont';
-  src: url("WebFont.eot");
-  src: url("WebFont.eot?#iefix") format("embedded-opentype"), url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"), url("WebFont.svg#webfont") format("svg"); }
-
-@font-face {
   font-family: 'Google Sans';
   src: url(../fonts/GoogleSans-Regular.ttf);
   font-weight: normal; }
@@ -36,8 +31,13 @@
   font-weight: 800;
   font-style: italic; }
 
-* {
-  font-family: 'WebFont', Arial, sans-serif; }
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: 'Google Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f5f8fb; }
 
 .bgHeaderColor {
   background: #006CD6;
@@ -48,8 +48,8 @@
 
 .pageBgPositionForOverlap {
   background: #EAEDF0;
-  height: 75px;
-  margin-top: -75px; }
+  height: 76px;
+  margin-top: -76px; }
 
 *:focus {
   outline: none; }
@@ -70,784 +70,1366 @@ p, h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   margin-right: auto;
   background: #006CD6; }
+
+.navContainer .hamburgerMenu {
+  display: none; }
+
+@media only screen and (max-width: 922px) {
   .navContainer .hamburgerMenu {
-    display: none; }
-    @media only screen and (max-width: 922px) {
-      .navContainer .hamburgerMenu {
-        display: block; } }
-    .navContainer .hamburgerMenu .hamburgerIcon {
-      width: 30px;
-      margin: 52px 20px 0 20px;
-      cursor: pointer; }
-  .navContainer .hostGatorLogo {
-    flex: 1; }
-    .navContainer .hostGatorLogo .logo {
-      margin: 46px 20px 0 20px; }
+    display: block; } }
+
+.navContainer .hamburgerMenu .hamburgerIcon {
+  width: 30px;
+  margin: 52px 20px 0 20px;
+  cursor: pointer; }
+
+.navContainer .hostGatorLogo {
+  flex: 1; }
+
+.navContainer .hostGatorLogo .logo {
+  margin: 46px 20px 0 20px; }
+
+.navContainer .dashboard {
+  display: block; }
+
+@media only screen and (max-width: 922px) {
   .navContainer .dashboard {
-    display: block; }
-    @media only screen and (max-width: 922px) {
-      .navContainer .dashboard {
-        display: none; } }
+    display: none; } }
+
+.navContainer .hosting {
+  display: block; }
+
+@media only screen and (max-width: 922px) {
   .navContainer .hosting {
-    display: block; }
-    @media only screen and (max-width: 922px) {
-      .navContainer .hosting {
-        display: none; } }
+    display: none; } }
+
+.navContainer .domains {
+  display: block; }
+
+@media only screen and (max-width: 922px) {
   .navContainer .domains {
-    display: block; }
-    @media only screen and (max-width: 922px) {
-      .navContainer .domains {
-        display: none; } }
+    display: none; } }
+
+.navContainer .marketplace {
+  display: block; }
+
+@media only screen and (max-width: 922px) {
   .navContainer .marketplace {
-    display: block; }
-    @media only screen and (max-width: 922px) {
-      .navContainer .marketplace {
-        display: none; } }
-  .navContainer .slider {
-    flex: 1; }
+    display: none; } }
+
+.navContainer .slider {
+  flex: 1; }
+
+.navContainer .search {
+  display: block; }
+
+@media only screen and (max-width: 922px) {
   .navContainer .search {
-    display: block; }
-    @media only screen and (max-width: 922px) {
-      .navContainer .search {
-        display: none; } }
-    .navContainer .search .searchIcon {
-      margin: 46px 10px 0 10px;
-      cursor: pointer; }
+    display: none; } }
+
+.navContainer .search .searchIcon {
+  margin: 46px 10px 0 10px;
+  cursor: pointer; }
+
+.navContainer .messages {
+  display: block; }
+
+@media only screen and (max-width: 922px) {
   .navContainer .messages {
-    display: block; }
-    @media only screen and (max-width: 922px) {
-      .navContainer .messages {
-        display: none; } }
-    .navContainer .messages .messageIcon {
-      margin: 46px 10px 0 10px;
-      cursor: pointer; }
+    display: none; } }
+
+.navContainer .messages .messageIcon {
+  margin: 46px 10px 0 10px;
+  cursor: pointer; }
+
+.navContainer .account {
+  display: block; }
+
+@media only screen and (max-width: 922px) {
   .navContainer .account {
-    display: block; }
-    @media only screen and (max-width: 922px) {
-      .navContainer .account {
-        display: none; } }
-    .navContainer .account .accountIcon {
-      margin: 46px 10px 0 10px;
-      cursor: pointer; }
+    display: none; } }
+
+.navContainer .account .accountIcon {
+  margin: 46px 10px 0 10px;
+  cursor: pointer; }
+
+.navContainer .more {
+  display: none; }
+
+.navContainer .more .moreBtnContainer {
+  display: flex; }
+
+.navContainer .more .moreBtnContainer .circleOne {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-right: 5px; }
+
+@media only screen and (max-width: 922px) {
   .navContainer .more {
-    display: none; }
-    .navContainer .more .moreBtnContainer {
-      display: flex; }
-      .navContainer .more .moreBtnContainer .circleOne {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: #ffffff;
-        margin-right: 5px; }
-    @media only screen and (max-width: 922px) {
-      .navContainer .more {
-        display: block; } }
-    .navContainer .more .moreIcon {
-      margin: 52px 20px 0 0;
-      cursor: pointer; }
-  .navContainer .navBtn {
-    width: 110px;
-    height: 40px;
-    font-size: 14px;
-    color: #ffffff;
-    background: #3399FF;
-    border: none;
-    border-radius: 20px;
-    margin: 46px 10px 0 10px;
-    cursor: pointer; }
+    display: block; } }
+
+.navContainer .more .moreIcon {
+  margin: 52px 20px 0 0;
+  cursor: pointer; }
+
+.navContainer .navBtn {
+  width: 110px;
+  height: 40px;
+  font-size: 14px;
+  color: #ffffff;
+  background: #3399FF;
+  border: none;
+  border-radius: 20px;
+  margin: 46px 10px 0 10px;
+  cursor: pointer; }
 
 .pageContainer {
   max-width: 1396px;
   margin-left: auto;
   margin-right: auto;
-  background: #EAEDF0;
   position: relative;
   /* Mobile Stats STARTS */
   /* Mobile Stats ENDS */
   /* My Hosting Plans Starts */
   /* My Hosting Plans Ends */
   /*  My Products STARTS */
-  /*  My Product ENDS */ }
+  /*  My Product ENDS */
+  /* Market Place STARTS */
+  /* Market Place ENDS */ }
+
+.pageContainer .navDropdownContainer {
+  width: 240px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none; }
+
+@media only screen and (max-width: 922px) {
   .pageContainer .navDropdownContainer {
-    width: 240px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none; }
-    @media only screen and (max-width: 922px) {
-      .pageContainer .navDropdownContainer {
-        display: block; } }
-    .pageContainer .navDropdownContainer .dashboardMobileBtn {
-      background: #3399FF;
-      height: 48px;
-      line-height: 48px;
-      font-size: 14px;
-      padding-left: 20px;
-      color: #ffffff; }
-    .pageContainer .navDropdownContainer .hostingMobileBtn {
-      background: #3399FF;
-      height: 48px;
-      line-height: 48px;
-      font-size: 14px;
-      padding-left: 20px;
-      color: #ffffff; }
-    .pageContainer .navDropdownContainer .domainMobileBtn {
-      background: #3399FF;
-      height: 48px;
-      line-height: 48px;
-      font-size: 14px;
-      padding-left: 20px;
-      color: #ffffff; }
-    .pageContainer .navDropdownContainer .marketplaceMobileBtn {
-      background: #3399FF;
-      height: 48px;
-      line-height: 48px;
-      font-size: 14px;
-      padding-left: 20px;
-      color: #ffffff; }
+    display: block; } }
+
+.pageContainer .navDropdownContainer .dashboardMobileBtn {
+  background: #3399FF;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  padding-left: 20px;
+  color: #ffffff; }
+
+.pageContainer .navDropdownContainer .hostingMobileBtn {
+  background: #3399FF;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  padding-left: 20px;
+  color: #ffffff; }
+
+.pageContainer .navDropdownContainer .domainMobileBtn {
+  background: #3399FF;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  padding-left: 20px;
+  color: #ffffff; }
+
+.pageContainer .navDropdownContainer .marketplaceMobileBtn {
+  background: #3399FF;
+  height: 48px;
+  line-height: 48px;
+  font-size: 14px;
+  padding-left: 20px;
+  color: #ffffff; }
+
+.pageContainer .moreDropdownContainer {
+  width: 160px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none; }
+
+@media only screen and (max-width: 922px) {
   .pageContainer .moreDropdownContainer {
-    width: 160px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: none; }
-    @media only screen and (max-width: 922px) {
-      .pageContainer .moreDropdownContainer {
-        display: block; } }
-    .pageContainer .moreDropdownContainer .searchMobile {
-      height: 38px;
-      line-height: 38px;
-      background: #3399FF;
-      color: #ffffff;
-      text-align: left;
-      font-size: 14px;
-      padding-left: 20px; }
-    .pageContainer .moreDropdownContainer .messageMobile {
-      height: 38px;
-      line-height: 38px;
-      color: #ffffff;
-      font-size: 14px;
-      background: #3399FF;
-      text-align: left;
-      padding-left: 20px; }
-    .pageContainer .moreDropdownContainer .accountMobile {
-      height: 38px;
-      line-height: 38px;
-      color: #ffffff;
-      background: #3399FF;
-      font-size: 14px;
-      text-align: left;
-      padding-left: 20px; }
-  .pageContainer .mobileBtn:hover {
-    cursor: pointer;
-    background: #4CA6FE; }
+    display: block; } }
+
+.pageContainer .moreDropdownContainer .searchMobile {
+  height: 38px;
+  line-height: 38px;
+  background: #3399FF;
+  color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  padding-left: 20px; }
+
+.pageContainer .moreDropdownContainer .messageMobile {
+  height: 38px;
+  line-height: 38px;
+  color: #ffffff;
+  font-size: 14px;
+  background: #3399FF;
+  text-align: left;
+  padding-left: 20px; }
+
+.pageContainer .moreDropdownContainer .accountMobile {
+  height: 38px;
+  line-height: 38px;
+  color: #ffffff;
+  background: #3399FF;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 20px; }
+
+.pageContainer .mobileBtn:hover {
+  cursor: pointer;
+  background: #4CA6FE; }
+
+.pageContainer .userWelcomeContainer {
+  display: flex;
+  flex-direction: row; }
+
+@media only screen and (max-width: 1024px) {
   .pageContainer .userWelcomeContainer {
-    display: flex;
-    flex-direction: row; }
-    @media only screen and (max-width: 1024px) {
-      .pageContainer .userWelcomeContainer {
-        flex-direction: column; } }
-    .pageContainer .userWelcomeContainer .userWelcome {
-      flex: 1;
-      background: #006CD6; }
-      .pageContainer .userWelcomeContainer .userWelcome h1 {
-        font-size: 48px;
-        font-weight: 200;
-        color: #ffffff;
-        padding: 0 0 20px 20px; }
-      .pageContainer .userWelcomeContainer .userWelcome p {
-        font-size: 22px;
-        line-height: 28px;
-        color: #ffffff;
-        font-weight: 200;
-        padding: 0 40px 38px 20px;
-        max-width: 466px; }
-    .pageContainer .userWelcomeContainer .testOne {
-      width: 20px;
-      background: #006CD6; }
-    .pageContainer .userWelcomeContainer .userAlert {
-      flex: 1;
-      background: #006CD6; }
-      .pageContainer .userWelcomeContainer .userAlert .alertContainer {
-        margin-bottom: 134px; }
-        .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgOne {
-          background: #0080FF;
-          height: 82px;
-          max-width: 602px;
-          margin-left: auto;
-          margin-right: auto;
-          border-radius: 6px; }
-          @media only screen and (max-width: 480px) {
-            .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgOne {
-              border-radius: 0; } }
-        .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgTwo {
-          background: #4CA6FE;
-          height: 82px;
-          max-width: 644px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: -65px;
-          border-radius: 6px; }
-          @media only screen and (max-width: 480px) {
-            .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgTwo {
-              border-radius: 0; } }
-        .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree {
-          display: flex;
-          margin-left: auto;
-          margin-right: auto;
-          background: #ffffff;
-          max-width: 681px;
-          margin-top: -65px;
-          border-radius: 6px; }
-          @media only screen and (max-width: 480px) {
-            .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree {
-              border-radius: 0; } }
-          .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertIconContainer {
-            background: #ffffff;
-            border-top-left-radius: 6px;
-            border-bottom-left-radius: 6px; }
-            .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertIconContainer .warningIcon {
-              width: 50px;
-              padding: 20px;
-              position: relative;
-              top: 5px; }
-          .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertBody {
-            font-size: 16px;
-            font-weight: 200;
-            color: #4A4A4A;
-            padding: 40px 0; }
-          .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertBackup .click {
-            cursor: pointer;
-            font-weight: 200;
-            color: #4A4A4A;
-            font-size: 16px;
-            text-decoration: none; }
-    .pageContainer .userWelcomeContainer .testTwo {
-      width: 20px;
-      background: #006CD6; }
+    flex-direction: column; } }
+
+.pageContainer .userWelcomeContainer .userWelcome {
+  flex: 1;
+  background: #006CD6; }
+
+.pageContainer .userWelcomeContainer .userWelcome h1 {
+  font-size: 48px;
+  font-weight: 100;
+  color: #ffffff;
+  padding: 0 0 20px 20px; }
+
+.pageContainer .userWelcomeContainer .userWelcome p {
+  font-size: 22px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 200;
+  padding: 0 40px 38px 20px;
+  max-width: 466px; }
+
+.pageContainer .userWelcomeContainer .testOne {
+  width: 36px;
+  background: #006CD6; }
+
+.pageContainer .userWelcomeContainer .userAlert {
+  flex: 1;
+  background: #006CD6; }
+
+.pageContainer .userWelcomeContainer .userAlert .alertContainer {
+  margin-bottom: 134px; }
+
+.pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgOne {
+  background: #0080FF;
+  height: 82px;
+  max-width: 602px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 480px) {
+  .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgOne {
+    border-radius: 0; } }
+
+.pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgTwo {
+  background: #4CA6FE;
+  height: 82px;
+  max-width: 644px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -65px;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 480px) {
+  .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgTwo {
+    border-radius: 0; } }
+
+.pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  max-width: 681px;
+  margin-top: -65px;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 480px) {
+  .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree {
+    border-radius: 0; } }
+
+.pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertIconContainer {
+  background: #ffffff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px; }
+
+.pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertIconContainer .warningIcon {
+  width: 50px;
+  padding: 20px;
+  position: relative;
+  top: 5px; }
+
+.pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertBody {
+  font-size: 16px;
+  font-weight: 200;
+  flex: 1;
+  color: #4A4A4A;
+  padding: 40px 0; }
+
+.pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertBackup {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  padding: 40px 20px 0 20px;
+  text-align: center; }
+
+.pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertBackup .click {
+  cursor: pointer;
+  font-weight: 200;
+  color: #4A4A4A;
+  font-size: 16px;
+  text-decoration: none; }
+
+@media only screen and (max-width: 480px) {
+  .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertBackup {
+    display: none; } }
+
+.pageContainer .userWelcomeContainer .testTwo {
+  width: 20px;
+  background: #006CD6; }
+
+.pageContainer .statsContainer {
+  display: flex;
+  height: 160px;
+  margin: -54px 20px 0 20px; }
+
+@media only screen and (max-width: 1024px) {
   .pageContainer .statsContainer {
-    display: flex;
-    height: 160px;
-    margin-top: -84px; }
-    .pageContainer .statsContainer h6 {
-      font-size: 16px;
-      font-weight: 200;
-      padding: 38px 0 10px 0;
-      color: #8F98A0; }
-    .pageContainer .statsContainer h1 {
-      font-size: 48px;
-      font-weight: 400; }
-      @media only screen and (max-width: 1024px) {
-        .pageContainer .statsContainer h1 {
-          font-size: 40px; } }
-      .pageContainer .statsContainer h1 h2 {
-        font-size: 22px; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .statsContainer h1 h2 {
-            font-size: 18px; } }
-    .pageContainer .statsContainer .statsWrapper {
-      width: 160px;
-      margin: 0 16px 0 0; }
-      @media only screen and (max-width: 1024px) {
-        .pageContainer .statsContainer .statsWrapper {
-          margin: 0;
-          border-right: 1px solid #eeeeee; } }
-      @media only screen and (max-width: 922px) {
-        .pageContainer .statsContainer .statsWrapper {
-          width: 100%;
-          border-bottom: 1px solid #eeeeee; } }
-      .pageContainer .statsContainer .statsWrapper .stats {
-        height: 160px;
-        width: 160px;
-        background: #ffffff;
-        border-radius: 6px;
-        text-align: center; }
-        .pageContainer .statsContainer .statsWrapper .stats h1 {
-          color: #00BB67; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .statsContainer .statsWrapper .stats {
-            border-radius: 0; } }
-        @media only screen and (max-width: 922px) {
-          .pageContainer .statsContainer .statsWrapper .stats {
-            width: 100%; } }
-    .pageContainer .statsContainer .visitors {
-      flex: 1;
-      background: #ffffff;
-      border-top-left-radius: 6px;
-      border-bottom-left-radius: 6px;
-      display: block; }
-      @media only screen and (max-width: 1024px) {
-        .pageContainer .statsContainer .visitors {
-          border-radius: 0; } }
-      .pageContainer .statsContainer .visitors h6 {
-        padding-left: 50px; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .statsContainer .visitors h6 {
-            padding-left: 0;
-            text-align: center; } }
-      .pageContainer .statsContainer .visitors h1 {
-        padding-left: 50px; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .statsContainer .visitors h1 {
-            padding-left: 0;
-            text-align: center; } }
-      @media only screen and (max-width: 922px) {
-        .pageContainer .statsContainer .visitors {
-          display: none; } }
-    .pageContainer .statsContainer .vistorsWeeklyTrend {
-      flex: 1;
-      background: #ffffff;
-      margin: 0 16px 0 0;
-      border-top-right-radius: 6px;
-      border-bottom-right-radius: 6px;
-      display: block; }
-      @media only screen and (max-width: 1024px) {
-        .pageContainer .statsContainer .vistorsWeeklyTrend {
-          margin: 0;
-          border-radius: 0;
-          border-right: 1px solid #eeeeee; } }
-      @media only screen and (max-width: 922px) {
-        .pageContainer .statsContainer .vistorsWeeklyTrend {
-          display: none; } }
-      .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer {
-        display: flex;
-        position: relative;
-        height: 100px;
-        width: 104px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px; }
-        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar1 {
-          width: 8px;
-          height: 100px;
-          background: #dddddd;
-          border-radius: 8px;
-          position: absolute;
-          bottom: 0; }
-          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar1 .barFill1 {
-            width: 8px;
-            border-radius: 8px;
-            position: absolute;
-            bottom: 0; }
-        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar2 {
-          width: 8px;
-          height: 100px;
-          background: #dddddd;
-          border-radius: 8px;
-          position: absolute;
-          bottom: 0;
-          left: 16px; }
-          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar2 .barFill2 {
-            width: 8px;
-            border-radius: 8px;
-            position: absolute;
-            bottom: 0; }
-        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar3 {
-          width: 8px;
-          height: 100px;
-          background: #dddddd;
-          border-radius: 8px;
-          position: absolute;
-          bottom: 0;
-          left: 32px; }
-          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar3 .barFill3 {
-            width: 8px;
-            border-radius: 8px;
-            position: absolute;
-            bottom: 0; }
-        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar4 {
-          width: 8px;
-          height: 100px;
-          background: #dddddd;
-          border-radius: 8px;
-          position: absolute;
-          bottom: 0;
-          left: 48px; }
-          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar4 .barFill4 {
-            width: 8px;
-            border-radius: 8px;
-            position: absolute;
-            bottom: 0; }
-        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar5 {
-          width: 8px;
-          height: 100px;
-          background: #dddddd;
-          border-radius: 8px;
-          position: absolute;
-          bottom: 0;
-          left: 64px; }
-          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar5 .barFill5 {
-            width: 8px;
-            border-radius: 8px;
-            position: absolute;
-            bottom: 0; }
-        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar6 {
-          width: 8px;
-          height: 100px;
-          background: #dddddd;
-          border-radius: 8px;
-          position: absolute;
-          bottom: 0;
-          left: 80px; }
-          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar6 .barFill6 {
-            width: 8px;
-            border-radius: 8px;
-            position: absolute;
-            bottom: 0; }
-        .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar7 {
-          width: 8px;
-          height: 100px;
-          background: #dddddd;
-          border-radius: 8px;
-          position: absolute;
-          bottom: 0;
-          left: 96px; }
-          .pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar7 .barFill7 {
-            width: 8px;
-            border-radius: 8px;
-            position: absolute;
-            bottom: 0; }
-    .pageContainer .statsContainer .activePlans {
-      width: 160px;
-      text-align: center;
-      background: #ffffff;
-      border-radius: 6px;
-      margin: 0 16px 0 0;
-      border-right: 1px solid #eeeeee; }
-      @media only screen and (max-width: 1024px) {
-        .pageContainer .statsContainer .activePlans {
-          margin: 0;
-          border-radius: 0; } }
-      @media only screen and (max-width: 922px) {
-        .pageContainer .statsContainer .activePlans {
-          width: 100%; } }
-    .pageContainer .statsContainer .nextPayment {
-      flex: 1;
-      background: #ffffff;
-      border-top-left-radius: 6px;
-      border-bottom-left-radius: 6px;
-      display: block; }
-      @media only screen and (max-width: 1024px) {
-        .pageContainer .statsContainer .nextPayment {
-          border-radius: 0; } }
-      @media only screen and (max-width: 922px) {
-        .pageContainer .statsContainer .nextPayment {
-          display: none; } }
-      .pageContainer .statsContainer .nextPayment h6 {
-        padding-left: 50px; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .statsContainer .nextPayment h6 {
-            padding-left: 0;
-            text-align: center; } }
-      .pageContainer .statsContainer .nextPayment h1 {
-        padding-left: 50px; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .statsContainer .nextPayment h1 {
-            padding-left: 0;
-            text-align: center; } }
-    .pageContainer .statsContainer .paymentDate {
-      flex: 1;
-      background: #ffffff;
-      border-top-right-radius: 6px;
-      border-bottom-right-radius: 6px;
-      text-align: center;
-      display: block; }
-      @media only screen and (max-width: 1024px) {
-        .pageContainer .statsContainer .paymentDate {
-          border-radius: 0; } }
-      @media only screen and (max-width: 922px) {
-        .pageContainer .statsContainer .paymentDate {
-          display: none; } }
-      .pageContainer .statsContainer .paymentDate h2 {
-        font-size: 22px;
-        font-weight: 200;
-        padding-top: 70px;
-        color: #0080FF; }
+    margin: -54px 0 0 0; } }
+
+@media only screen and (max-width: 922px) {
+  .pageContainer .statsContainer {
+    margin: -54px 20px 0 20px; } }
+
+.pageContainer .statsContainer h6 {
+  font-size: 16px;
+  font-weight: 200;
+  padding: 38px 0 10px 0;
+  color: #8F98A0; }
+
+.pageContainer .statsContainer h1 {
+  font-size: 40px;
+  font-weight: 400; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer h1 {
+    font-size: 40px; } }
+
+.pageContainer .statsContainer h1 h2 {
+  font-size: 22px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer h1 h2 {
+    font-size: 18px; } }
+
+.pageContainer .statsContainer .statsWrapper {
+  width: 160px;
+  margin: 0 16px 0 0; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .statsWrapper {
+    margin: 0;
+    border-right: 1px solid #eeeeee; } }
+
+@media only screen and (max-width: 922px) {
+  .pageContainer .statsContainer .statsWrapper {
+    width: 100%;
+    border-bottom: 1px solid #eeeeee; } }
+
+.pageContainer .statsContainer .statsWrapper .stats {
+  height: 160px;
+  width: 160px;
+  background: #ffffff;
+  border-radius: 6px;
+  text-align: center; }
+
+.pageContainer .statsContainer .statsWrapper .stats h1 {
+  color: #00BB67; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .statsWrapper .stats {
+    border-radius: 0; } }
+
+@media only screen and (max-width: 922px) {
+  .pageContainer .statsContainer .statsWrapper .stats {
+    width: 100%; } }
+
+.pageContainer .statsContainer .visitors {
+  flex: 1;
+  background: #ffffff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  display: block; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .visitors {
+    border-radius: 0; } }
+
+.pageContainer .statsContainer .visitors h6 {
+  padding-left: 42px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .visitors h6 {
+    padding-left: 0;
+    text-align: center; } }
+
+.pageContainer .statsContainer .visitors h1 {
+  padding-left: 40px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .visitors h1 {
+    padding-left: 0;
+    text-align: center; } }
+
+@media only screen and (max-width: 922px) {
+  .pageContainer .statsContainer .visitors {
+    display: none; } }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend {
+  flex: 1;
+  background: #ffffff;
+  margin: 0 16px 0 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  display: block; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .vistorsWeeklyTrend {
+    margin: 0;
+    border-radius: 0;
+    border-right: 1px solid #eeeeee; } }
+
+@media only screen and (max-width: 922px) {
+  .pageContainer .statsContainer .vistorsWeeklyTrend {
+    display: none; } }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer {
+  display: flex;
+  position: relative;
+  height: 100px;
+  width: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar1 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar1 .barFill1 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar2 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 16px; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar2 .barFill2 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar3 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 32px; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar3 .barFill3 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar4 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 48px; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar4 .barFill4 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar5 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 64px; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar5 .barFill5 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar6 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 80px; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar6 .barFill6 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar7 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 96px; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .graphContainer .bar7 .barFill7 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .statsContainer .activePlans {
+  width: 160px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 6px;
+  margin: 0 16px 0 0;
+  border-right: 1px solid #eeeeee; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .activePlans {
+    margin: 0;
+    border-radius: 0; } }
+
+@media only screen and (max-width: 922px) {
+  .pageContainer .statsContainer .activePlans {
+    width: 100%; } }
+
+.pageContainer .statsContainer .nextPayment {
+  flex: 1;
+  background: #ffffff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  display: block; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .nextPayment {
+    border-radius: 0; } }
+
+@media only screen and (max-width: 922px) {
+  .pageContainer .statsContainer .nextPayment {
+    display: none; } }
+
+.pageContainer .statsContainer .nextPayment h6 {
+  padding-left: 40px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .nextPayment h6 {
+    padding-left: 0;
+    text-align: center; } }
+
+.pageContainer .statsContainer .nextPayment h1 {
+  padding-left: 40px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .nextPayment h1 {
+    padding-left: 0;
+    text-align: center; } }
+
+.pageContainer .statsContainer .paymentDate {
+  flex: 1;
+  background: #ffffff;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  text-align: center;
+  display: block; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .statsContainer .paymentDate {
+    border-radius: 0; } }
+
+@media only screen and (max-width: 922px) {
+  .pageContainer .statsContainer .paymentDate {
+    display: none; } }
+
+.pageContainer .statsContainer .paymentDate h2 {
+  font-size: 22px;
+  font-weight: 200;
+  padding-top: 70px;
+  color: #0080FF; }
+
+.pageContainer .mobileStatsWrapper {
+  display: none; }
+
+@media only screen and (max-width: 922px) {
   .pageContainer .mobileStatsWrapper {
-    display: none; }
-    @media only screen and (max-width: 922px) {
-      .pageContainer .mobileStatsWrapper {
-        display: block; } }
-    .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer {
-      height: 160px;
-      display: flex; }
-      .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol {
-        flex: 1;
-        background: #ffffff; }
-        .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol h6 {
-          font-size: 16px;
-          font-weight: 200;
-          padding: 38px 0 10px 0;
-          color: #8F98A0;
-          text-align: center; }
-        .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol h1 {
-          font-size: 40px;
-          font-weight: 400;
-          text-align: center; }
-        @media only screen and (max-width: 922px) {
-          .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol {
-            border-top: 1px solid #eeeeee; } }
-      .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol {
-        flex: 1;
-        border-top: 1px solid #eeeeee;
-        background: #ffffff; }
-    .pageContainer .mobileStatsWrapper .mobilePaymentContainer {
-      display: flex;
-      height: 160px; }
-      .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentLeftCol {
-        flex: 1;
-        background: #ffffff;
-        border-top: 1px solid #eeeeee; }
-        .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentLeftCol h6 {
-          font-size: 16px;
-          font-weight: 200;
-          padding: 38px 0 10px 0;
-          color: #8F98A0;
-          text-align: center; }
-        .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentLeftCol h1 {
-          font-size: 40px;
-          font-weight: 400;
-          text-align: center; }
-      .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol {
-        flex: 1;
-        background: #ffffff;
-        border-top: 1px solid #eeeeee; }
-        .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol h6 {
-          font-size: 16px;
-          font-weight: 200;
-          padding: 38px 0 10px 0;
-          color: #8F98A0;
-          text-align: center; }
-        .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol h1 {
-          font-size: 28px;
-          font-weight: 400;
-          text-align: center;
-          padding-top: 6px;
-          color: #0080FF; }
-  .pageContainer .pageTitle {
-    padding: 70px 0 50px 0;
-    font-size: 32px;
-    color: #243646;
-    font-weight: 400; }
+    display: block; } }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer {
+  height: 160px;
+  display: flex;
+  margin: 0 20px; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol {
+  flex: 1;
+  background: #ffffff; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol h6 {
+  font-size: 16px;
+  font-weight: 200;
+  padding: 38px 0 10px 0;
+  color: #8F98A0;
+  text-align: center; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol h1 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center; }
+
+@media only screen and (max-width: 922px) {
+  .pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsLeftCol {
+    border-top: 1px solid #eeeeee; } }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol {
+  flex: 1;
+  border-top: 1px solid #eeeeee;
+  background: #ffffff; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer {
+  display: flex;
+  position: relative;
+  height: 100px;
+  width: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar1 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar1 .barFill1 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar2 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 16px; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar2 .barFill2 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar3 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 32px; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar3 .barFill3 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar4 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 48px; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar4 .barFill4 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar5 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 64px; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar5 .barFill5 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar6 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 80px; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar6 .barFill6 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar7 {
+  width: 8px;
+  height: 100px;
+  background: #dddddd;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  left: 96px; }
+
+.pageContainer .mobileStatsWrapper .mobileVistorStatsContainer .mobileVistorsRightCol .graphContainer .bar7 .barFill7 {
+  width: 8px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 0; }
+
+.pageContainer .mobileStatsWrapper .mobilePaymentContainer {
+  display: flex;
+  height: 160px;
+  margin: 0 20px; }
+
+.pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentLeftCol {
+  flex: 1;
+  background: #ffffff;
+  border-top: 1px solid #eeeeee; }
+
+.pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentLeftCol h6 {
+  font-size: 16px;
+  font-weight: 200;
+  padding: 38px 0 10px 0;
+  color: #8F98A0;
+  text-align: center; }
+
+.pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentLeftCol h1 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center; }
+
+.pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol {
+  flex: 1;
+  background: #ffffff;
+  border-top: 1px solid #eeeeee; }
+
+.pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol h6 {
+  font-size: 16px;
+  font-weight: 200;
+  padding: 38px 0 10px 0;
+  color: #8F98A0;
+  text-align: center; }
+
+.pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol h1 {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 6px;
+  color: #0080FF; }
+
+@media only screen and (max-width: 480px) {
+  .pageContainer .mobileStatsWrapper .mobilePaymentContainer .mobilePaymentRightCol h1 {
+    font-size: 18px;
+    padding-top: 15px; } }
+
+.pageContainer .pageTitle {
+  padding: 70px 20px 50px 20px;
+  font-size: 32px;
+  color: #243646;
+  font-weight: bold; }
+
+.pageContainer .columnWrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px; }
+
+@media only screen and (max-width: 1024px) {
   .pageContainer .columnWrapper {
-    display: flex;
-    flex-direction: row; }
-    @media only screen and (max-width: 1024px) {
-      .pageContainer .columnWrapper {
-        flex-direction: column; } }
-    .pageContainer .columnWrapper .leftContainer {
-      display: flex;
-      width: 100%; }
-      @media only screen and (max-width: 600px) {
-        .pageContainer .columnWrapper .leftContainer {
-          flex-direction: column; } }
-      .pageContainer .columnWrapper .leftContainer .one {
-        flex: 1;
-        background: #3399FF;
-        border-radius: 6px;
-        margin: 0 8px 0 0; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .columnWrapper .leftContainer .one {
-            margin: 0 8px 8px 0; } }
-        @media only screen and (max-width: 600px) {
-          .pageContainer .columnWrapper .leftContainer .one {
-            margin: 0 0 16px 0; } }
-      .pageContainer .columnWrapper .leftContainer .two {
-        flex: 1;
-        background: #203243;
-        margin: 0 8px 0 8px;
-        border-radius: 6px; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .columnWrapper .leftContainer .two {
-            margin: 0 0 8px 8px; } }
-        @media only screen and (max-width: 600px) {
-          .pageContainer .columnWrapper .leftContainer .two {
-            margin: 0 0 16px 0; } }
-    .pageContainer .columnWrapper .rightContainer {
-      display: flex;
-      width: 100%; }
-      @media only screen and (max-width: 600px) {
-        .pageContainer .columnWrapper .rightContainer {
-          flex-direction: column; } }
-      .pageContainer .columnWrapper .rightContainer .three {
-        background: #00BB67;
-        flex: 1;
-        margin: 0 8px 0 8px;
-        border-radius: 6px; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .columnWrapper .rightContainer .three {
-            margin: 8px 8px 0 0; } }
-        @media only screen and (max-width: 600px) {
-          .pageContainer .columnWrapper .rightContainer .three {
-            margin: 0 0 16px 0; } }
-      .pageContainer .columnWrapper .rightContainer .four {
-        background-image: linear-gradient(to top right, #362F95, #211C5B);
-        flex: 1;
-        border-radius: 6px;
-        margin: 0 0 0 8px; }
-        @media only screen and (max-width: 1024px) {
-          .pageContainer .columnWrapper .rightContainer .four {
-            margin-top: 8px; } }
-        @media only screen and (max-width: 600px) {
-          .pageContainer .columnWrapper .rightContainer .four {
-            margin: 0 0 16px 0; } }
-    .pageContainer .columnWrapper .cardContainer {
-      background: #ffffff;
-      padding: 40px 50px;
-      border-radius: 6px; }
-      .pageContainer .columnWrapper .cardContainer .defaultLoadImg {
-        width: 64px;
-        height: 64px;
-        background: #EAEAEA;
-        border-radius: 50%; }
-      .pageContainer .columnWrapper .cardContainer .defaultLineOne {
-        max-width: 65px;
-        height: 13px;
-        background: #D8D8D8;
-        border-radius: 6px;
-        margin: 30px 0 15px 0; }
-      .pageContainer .columnWrapper .cardContainer .defaultLineTwo {
-        max-width: 228px;
-        height: 20px;
-        background: #E4E4E4;
-        border-radius: 10px;
-        margin: 15px 0; }
-      .pageContainer .columnWrapper .cardContainer .defaultLineThree {
-        max-width: 103px;
-        height: 13px;
-        background: #F2f2f2;
-        border-radius: 10px;
-        margin: 15px 0 55px 0; }
-      .pageContainer .columnWrapper .cardContainer .defaultLineFour {
-        max-width: 120px;
-        height: 13px;
-        background: #D8D8D8;
-        border-radius: 6px; }
-    .pageContainer .columnWrapper .cardContainerInfo {
-      color: #ffffff; }
-      .pageContainer .columnWrapper .cardContainerInfo .cardIcon {
-        margin: 32px 45px 45px 45px; }
-      .pageContainer .columnWrapper .cardContainerInfo h5 {
-        font-size: 16px;
-        font-weight: 200;
-        margin: 0 45px 10px 45px; }
-      .pageContainer .columnWrapper .cardContainerInfo h3 {
-        font-size: 22px;
-        font-weight: 200;
-        margin: 0 45px 60px 45px; }
-      .pageContainer .columnWrapper .cardContainerInfo h4 {
-        font-size: 16px;
-        font-weight: 200;
-        margin: 0 45px 45px 45px; }
+    flex-direction: column; } }
+
+.pageContainer .columnWrapper .leftContainer {
+  display: flex;
+  width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .leftContainer {
+    flex-direction: column; } }
+
+.pageContainer .columnWrapper .leftContainer .one {
+  flex: 1;
+  background: #3399FF;
+  border-radius: 6px;
+  margin: 0 8px 0 0; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .columnWrapper .leftContainer .one {
+    margin: 0 8px 8px 0; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .leftContainer .one {
+    margin: 0 0 16px 0; } }
+
+.pageContainer .columnWrapper .leftContainer .two {
+  flex: 1;
+  background: #203243;
+  margin: 0 8px 0 8px;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .columnWrapper .leftContainer .two {
+    margin: 0 0 8px 8px; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .leftContainer .two {
+    margin: 0 0 16px 0; } }
+
+.pageContainer .columnWrapper .rightContainer {
+  display: flex;
+  width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .rightContainer {
+    flex-direction: column; } }
+
+.pageContainer .columnWrapper .rightContainer .three {
+  background: #00BB67;
+  flex: 1;
+  margin: 0 8px 0 8px;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .columnWrapper .rightContainer .three {
+    margin: 8px 8px 0 0; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .rightContainer .three {
+    margin: 0 0 16px 0; } }
+
+.pageContainer .columnWrapper .rightContainer .four {
+  background-image: linear-gradient(to top right, #362F95, #211C5B);
+  flex: 1;
+  border-radius: 6px;
+  margin: 0 0 0 8px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .columnWrapper .rightContainer .four {
+    margin-top: 8px; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .rightContainer .four {
+    margin: 0 0 16px 0; } }
+
+.pageContainer .columnWrapper .cardContainer {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 6px; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLoadImg {
+  width: 64px;
+  height: 64px;
+  background: #EAEAEA;
+  border-radius: 50%; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLineOne {
+  max-width: 65px;
+  height: 13px;
+  background: #D8D8D8;
+  border-radius: 6px;
+  margin: 30px 0 15px 0; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLineTwo {
+  max-width: 228px;
+  height: 20px;
+  background: #E4E4E4;
+  border-radius: 10px;
+  margin: 15px 0; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLineThree {
+  max-width: 103px;
+  height: 13px;
+  background: #F2f2f2;
+  border-radius: 10px;
+  margin: 15px 0 55px 0; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLineFour {
+  max-width: 120px;
+  height: 13px;
+  background: #D8D8D8;
+  border-radius: 6px; }
+
+.pageContainer .columnWrapper .cardContainerInfo {
+  color: #ffffff; }
+
+.pageContainer .columnWrapper .cardContainerInfo .cardIcon {
+  margin: 32px 45px 32px 45px;
+  width: 60px; }
+
+.pageContainer .columnWrapper .cardContainerInfo h5 {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0 45px 10px 45px; }
+
+.pageContainer .columnWrapper .cardContainerInfo h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 45px 60px 45px;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.pageContainer .columnWrapper .cardContainerInfo h2 {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 36px 36px 20px 36px; }
+
+.pageContainer .columnWrapper .cardContainerInfo h4 {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0 45px 45px 45px;
+  cursor: pointer; }
+
+.pageContainer .columnWrapper .cardContainerInfo p {
+  font-size: 16px;
+  padding: 0 36px 36px 36px; }
+
+.pageContainer .columnWrapper .cardContainerInfo button {
+  width: 165px;
+  height: 48px;
+  border-radius: 48px;
+  background: #FFA800;
+  color: #211C5B;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin: 0 0 45px 36px; }
+
+.pageContainer .columnWrapper .cardContainerInfoMp .siteLockIcon {
+  height: 40px;
+  margin: 32px 45px 32px 45px; }
+
+.pageContainer .columnWrapper .cardContainerInfoMp .seoIcon {
+  height: 45px;
+  margin: 30px 45px; }
+
+.pageContainer .columnWrapper .cardContainerInfoMp .ctctIcon {
+  height: 25px;
+  margin: 40px 45px; }
+
+.pageContainer .columnWrapper .cardContainerInfoMp h5 {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0 45px 10px 45px;
+  color: #ffffff; }
+
+.pageContainer .columnWrapper .cardContainerInfoMp h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0 45px 60px 45px; }
+
+.pageContainer .columnWrapper .cardContainerInfoMp .hide {
+  color: transparent; }
+
+.pageContainer .columnWrapper .cardContainerInfoMp h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 36px 45px 20px 45px; }
+
+.pageContainer .columnWrapper .cardContainerInfoMp h4 {
+  font-size: 16px;
+  font-weight: 200;
+  color: #ffffff;
+  margin: 0 45px 45px 45px;
+  cursor: pointer; }
+
+.pageContainer .columnWrapper .cardContainerInfoMp button {
+  background: #FFA800;
+  border: none;
+  color: #211C5B;
+  border-radius: 24px;
+  height: 48px;
+  width: 165px;
+  margin: 0 45px 45px 45px;
+  cursor: pointer; }
+
+.pageContainer .productsContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px; }
+
+@media only screen and (max-width: 1024px) {
   .pageContainer .productsContainer {
-    display: flex;
-    flex-direction: row; }
-    @media only screen and (max-width: 1024px) {
-      .pageContainer .productsContainer {
-        flex-direction: column; } }
-    .pageContainer .productsContainer .productsLeftColumn {
-      flex: 1; }
-      .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer {
-        display: flex;
-        flex-direction: row; }
-        .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .security {
-          flex: 1;
-          height: 324px;
-          background: #ffffff;
-          margin: 0 8px 0 0; }
-          @media only screen and (max-width: 1024px) {
-            .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .security {
-              margin: 0 8px 8px 0; } }
-          @media only screen and (max-width: 600px) {
-            .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .security {
-              margin: 0 0 8px 0; } }
-        .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .privacy {
-          flex: 1;
-          height: 324px;
-          background: #ffffff;
-          margin: 0 8px 0 8px; }
-          @media only screen and (max-width: 1024px) {
-            .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .privacy {
-              margin: 0 0 8px 8px; } }
-          @media only screen and (max-width: 600px) {
-            .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .privacy {
-              margin: 8px 0 8px 0; } }
-        @media only screen and (max-width: 600px) {
-          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer {
-            flex-direction: column; } }
-        .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer {
-          background: #ffffff;
-          padding: 40px 50px; }
-          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLoadImg {
-            width: 64px;
-            height: 64px;
-            background: #EAEAEA;
-            border-radius: 50%; }
-          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineOne {
-            max-width: 65px;
-            height: 13px;
-            background: #D8D8D8;
-            border-radius: 6px;
-            margin: 30px 0 15px 0; }
-          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineTwo {
-            max-width: 228px;
-            height: 20px;
-            background: #E4E4E4;
-            border-radius: 10px;
-            margin: 15px 0; }
-          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineThree {
-            max-width: 103px;
-            height: 13px;
-            background: #F2f2f2;
-            border-radius: 10px;
-            margin: 15px 0 55px 0; }
-          .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineFour {
-            max-width: 120px;
-            height: 13px;
-            background: #D8D8D8;
-            border-radius: 6px; }
-    .pageContainer .productsContainer .productsRightColumn {
-      flex: 1; }
+    flex-direction: column; } }
+
+.pageContainer .productsContainer .cardIcon {
+  margin: 32px 45px 32px 45px;
+  width: 60px; }
+
+.pageContainer .productsContainer .productsLeftColumn {
+  flex: 1; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer {
+  display: flex;
+  flex-direction: row; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer h6 {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0 45px 8px 45px; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 45px 8px 45px; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .site {
+  font-size: 16px;
+  font-weight: 200;
+  color: #4F5E6B;
+  margin: 0 45px 48px 45px; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .manageProduct {
+  font-size: 16px;
+  font-weight: 200;
+  color: #4F5E6B;
+  margin: 0 45px 0 45px; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .security {
+  flex: 1;
+  height: 324px;
+  background: #ffffff;
+  margin: 0 8px 0 0;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .security {
+    margin: 0 8px 8px 0; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .security {
+    margin: 0 0 8px 0; } }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .privacy {
+  flex: 1;
+  height: 324px;
+  background: lightgreen;
+  background: #ffffff;
+  margin: 0 8px 0 8px;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .privacy {
+    margin: 0 0 8px 8px; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .privacy {
+    margin: 8px 0 8px 0; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer {
+    flex-direction: column; } }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer {
+  background: #ffffff;
+  padding: 40px 50px; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLoadImg {
+  width: 64px;
+  height: 64px;
+  background: #EAEAEA;
+  border-radius: 50%; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineOne {
+  max-width: 65px;
+  height: 13px;
+  background: #D8D8D8;
+  border-radius: 6px;
+  margin: 30px 0 15px 0; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineTwo {
+  max-width: 228px;
+  height: 20px;
+  background: #E4E4E4;
+  border-radius: 10px;
+  margin: 15px 0; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineThree {
+  max-width: 103px;
+  height: 13px;
+  background: #F2f2f2;
+  border-radius: 10px;
+  margin: 15px 0 55px 0; }
+
+.pageContainer .productsContainer .productsLeftColumn .securityPrivacyContainer .cardContainer .defaultLineFour {
+  max-width: 120px;
+  height: 13px;
+  background: #D8D8D8;
+  border-radius: 6px; }
+
+.pageContainer .productsContainer .productsRightColumn {
+  flex: 1; }
+
+.pageContainer .domainInfoContainer {
+  display: flex;
+  height: 152px; }
+
+@media only screen and (max-width: 1024px) {
   .pageContainer .domainInfoContainer {
-    display: flex;
-    height: 152px; }
-    @media only screen and (max-width: 1024px) {
-      .pageContainer .domainInfoContainer {
-        margin: 8px 0 0 -8px; } }
-    .pageContainer .domainInfoContainer .domainIcon {
-      width: 152px;
-      background: #ffffff;
-      margin: 0 0 0 8px; }
-    .pageContainer .domainInfoContainer .domainBodyInfo {
-      flex: 1;
-      background: #ffffff;
-      margin: 0 0 0 8px; }
-      .pageContainer .domainInfoContainer .domainBodyInfo h6 {
-        font-size: 16px;
-        font-weight: 200; }
-      .pageContainer .domainInfoContainer .domainBodyInfo h3 {
-        font-size: 22px;
-        font-weight: 200; }
-      .pageContainer .domainInfoContainer .domainBodyInfo .defaultLineFive {
-        background: #D8D8D8;
-        max-width: 103px;
-        height: 12px;
-        border-radius: 6px;
-        margin: 54px 0 11px 35px; }
-      .pageContainer .domainInfoContainer .domainBodyInfo .defaultLineSix {
-        background: #D8D8D8;
-        max-width: 225px;
-        height: 20px;
-        border-radius: 20px;
-        margin: 0 0 0 35px; }
-    .pageContainer .domainInfoContainer .manageDomain {
-      width: 178px;
-      background: #ffffff; }
-      .pageContainer .domainInfoContainer .manageDomain .defaultLineSeven {
-        height: 12px;
-        max-width: 115px;
-        background: #D8D8D8;
-        border-radius: 6px;
-        margin: 70px 0 0 0; }
-  .pageContainer .domainInfoMarginBottom {
-    margin-bottom: 20px; }
+    margin: 8px 0 0 -8px; } }
+
+.pageContainer .domainInfoContainer .domainIcon {
+  width: 152px;
+  background: #ffffff;
+  margin: 0 0 0 8px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px; }
+
+.pageContainer .domainInfoContainer .domainIcon .dotComIcon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 65px; }
+
+.pageContainer .domainInfoContainer .domainBodyInfo {
+  flex: 1;
+  background: #ffffff; }
+
+.pageContainer .domainInfoContainer .domainBodyInfo h6 {
+  font-size: 16px;
+  font-weight: 200;
+  margin: 48px 0 0 0; }
+
+.pageContainer .domainInfoContainer .domainBodyInfo h3 {
+  font-size: 22px;
+  font-weight: 200;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.pageContainer .domainInfoContainer .domainBodyInfo .defaultLineFive {
+  background: #D8D8D8;
+  max-width: 103px;
+  height: 12px;
+  border-radius: 6px;
+  margin: 54px 0 11px 35px; }
+
+.pageContainer .domainInfoContainer .domainBodyInfo .defaultLineSix {
+  background: #D8D8D8;
+  max-width: 225px;
+  height: 20px;
+  border-radius: 20px;
+  margin: 0 0 0 35px; }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .domainInfoContainer .domainBodyInfo {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px; } }
+
+.pageContainer .domainInfoContainer .manageDomain {
+  width: 178px;
+  background: #ffffff;
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  display: block; }
+
+.pageContainer .domainInfoContainer .manageDomain p {
+  line-height: 152px;
+  color: 4F5E6B;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 0 20px; }
+
+.pageContainer .domainInfoContainer .manageDomain .defaultLineSeven {
+  height: 12px;
+  max-width: 115px;
+  background: #D8D8D8;
+  border-radius: 6px;
+  margin: 70px 0 0 0; }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .domainInfoContainer .manageDomain {
+    display: none; } }
+
+.pageContainer .domainInfoMarginBottom {
+  margin-bottom: 20px; }
+
+.pageContainer .columnWrapper {
+  display: flex;
+  flex-direction: row; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .columnWrapper {
+    flex-direction: column; } }
+
+.pageContainer .columnWrapper .leftContainer {
+  display: flex;
+  width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .leftContainer {
+    flex-direction: column; } }
+
+.pageContainer .columnWrapper .leftContainer .five {
+  flex: 1;
+  background: #C31E1E;
+  margin: 0 8px 0 0;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .columnWrapper .leftContainer .five {
+    margin: 0 8px 8px 0; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .leftContainer .five {
+    margin: 0 0 16px 0; } }
+
+.pageContainer .columnWrapper .leftContainer .six {
+  flex: 1;
+  background: #005CB8;
+  border-radius: 6px;
+  margin: 0 8px 0 8px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .columnWrapper .leftContainer .six {
+    margin: 0 0 8px 8px; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .leftContainer .six {
+    margin: 0 0 16px 0; } }
+
+.pageContainer .columnWrapper .rightContainer {
+  display: flex;
+  width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .rightContainer {
+    flex-direction: column; } }
+
+.pageContainer .columnWrapper .rightContainer .seven {
+  background: #3C4A57;
+  flex: 1;
+  border-radius: 6px;
+  margin: 0 8px 0 8px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .columnWrapper .rightContainer .seven {
+    margin: 8px 8px 0 0; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .rightContainer .seven {
+    margin: 0 0 16px 0; } }
+
+.pageContainer .columnWrapper .rightContainer .eight {
+  background-image: linear-gradient(to top right, #006CD6, #0080FF);
+  flex: 1;
+  margin: 0 0 0 8px;
+  border-radius: 6px; }
+
+@media only screen and (max-width: 1024px) {
+  .pageContainer .columnWrapper .rightContainer .eight {
+    margin-top: 8px; } }
+
+@media only screen and (max-width: 600px) {
+  .pageContainer .columnWrapper .rightContainer .eight {
+    margin: 0 0 16px 0; } }
+
+.pageContainer .columnWrapper .cardContainer {
+  background: #ffffff;
+  padding: 40px 50px; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLoadImg {
+  width: 64px;
+  height: 64px;
+  background: #EAEAEA;
+  border-radius: 50%; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLineOne {
+  max-width: 65px;
+  height: 13px;
+  background: #D8D8D8;
+  border-radius: 6px;
+  margin: 30px 0 15px 0; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLineTwo {
+  max-width: 228px;
+  height: 20px;
+  background: #E4E4E4;
+  border-radius: 10px;
+  margin: 15px 0; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLineThree {
+  max-width: 103px;
+  height: 13px;
+  background: #F2f2f2;
+  border-radius: 10px;
+  margin: 15px 0 55px 0; }
+
+.pageContainer .columnWrapper .cardContainer .defaultLineFour {
+  max-width: 120px;
+  height: 13px;
+  background: #D8D8D8;
+  border-radius: 6px; }
+
+.pageContainer .marketPlaceMargin {
+  margin-bottom: 100px; }
