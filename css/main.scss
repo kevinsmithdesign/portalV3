@@ -354,7 +354,9 @@ p, h1, h2, h3, h4, h5, h6 {
         font-weight:200;
         padding:0 40px 100px 20px;
         max-width:466px;
-
+        // @include Tablet {
+        //   padding:0 40px 40px 20px;
+        // }
       }
     }
     .testOne {
@@ -369,7 +371,7 @@ p, h1, h2, h3, h4, h5, h6 {
       // background:#006CD6;
 
       .alertContainer {
-        // margin-bottom:134px;
+        margin-bottom:134px;
         .alertbgOne {
           background:#0080FF;
             height:82px;
@@ -448,18 +450,73 @@ p, h1, h2, h3, h4, h5, h6 {
             @include Phone {
               display:none;
             }
+
           }
         }
         
       }
+  } 
+  
+  .defaultNameLine {
+    // background:#D8D8D8;
+    background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+    height:13px;
+    max-width:100px;
+    border-radius:7px;
+    position:relative;
+    z-index:1;
+    margin:20px 20px 60px 20px;
+    .defaultNameLineFill {
+      background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+      height:13px;
+      border-radius:7px;
+    }
+  }
 
+  .defaultDescriptionLineOne {
+    // background:#D8D8D8;
+    background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+    height:16px;
+    width:280px;
+    margin:10px 20px 10px 20px;
+    border-radius:8px;
+    .defaultDescriptionLineOneFill {
+      background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+      height:16px;
+      border-radius:8px;
+    }
+  }
 
+  .defaultDescriptionLineTwo {
+    // background:#D8D8D8;
+    background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+    height:16px;
+    width:320px;
+    margin:15px 20px 10px 20px;
+    border-radius:8px;
+    .defaultDescriptionLineTwoFill {
+      background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+      height:16px;
+      border-radius:8px;
+    }
+  }
 
-  }  
+  .defaultDescriptionLineThree {
+    // background:#D8D8D8;
+    background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+    height:16px;
+    width:300px;
+    margin:15px 20px 120px 20px;
+    border-radius:8px;
+    .defaultDescriptionLineThreeFill {
+      background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+      height:16px;
+      border-radius:8px;
+    }
+  }
+  
   .testTwo {
     width:20px;
-    // background:#006CD6;
-    // background:orange;
   }   
       
   }
@@ -512,6 +569,8 @@ p, h1, h2, h3, h4, h5, h6 {
         background:$white;
         border-radius:6px;
         text-align:center;
+        box-shadow: 4px 4px 12px 4px rgba(0,0,0,.06);
+
         h1 {
           color:#00BB67;
         }
@@ -522,6 +581,41 @@ p, h1, h2, h3, h4, h5, h6 {
           width:100%;
         }
       }
+      .statusDefaultCard {
+        background:#ddd;
+      }
+      .defaultLineStatusOne {
+        // background:#D8D8D8;
+        background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        height:12px;
+        max-width:60px;
+        border-radius:6px;
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        top:48px;
+        .defaultLineStatusOneFill {
+          background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+          height:12px;
+          border-radius:6px;
+        }
+      }
+      .defaultLineStatusTwo {
+        // background:#E4E4E4;
+        background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        height:16px;
+        max-width:80px;
+        border-radius:8px;
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        top:78px;
+        .defaultLineStatusTwoFill {
+          background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+          height:16px;
+          border-radius:8px;
+        }
+      }
     }
     .visitors {
       flex:1;
@@ -529,6 +623,8 @@ p, h1, h2, h3, h4, h5, h6 {
       border-top-left-radius:6px;
       border-bottom-left-radius:6px;
       display:block;
+      box-shadow: 0 4px 12px 0 rgba(0,0,0,.06);
+
         @include Desktop {
           border-radius:0;
           // border-right:1px solid #eeeeee;
@@ -550,6 +646,38 @@ p, h1, h2, h3, h4, h5, h6 {
       @include Tablet {
         display:none;
       }
+
+      .defaultLineStatusThree {
+        // background:#D8D8D8;
+        background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        height:12px;
+        max-width:60px;
+        border-radius:6px;
+        margin-left:42px;
+        position:relative;
+        top:48px;
+        .defaultLineStatusThreeFill {
+          background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+          height:12px;
+          border-radius:6px;
+        }
+      }
+      .defaultLineStatusFour {
+        // background:#E4E4E4;
+        background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        height:16px;
+        max-width:80px;
+        border-radius:8px;
+        margin-left:42px;
+        position:relative;
+        top:78px;
+        .defaultLineStatusFourFill {
+          background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+          height:16px;
+          border-radius:8px;
+        }
+      }
+
     }
     .vistorsWeeklyTrend {
       flex:1;
@@ -558,6 +686,7 @@ p, h1, h2, h3, h4, h5, h6 {
       border-top-right-radius:6px;
       border-bottom-right-radius:6px;
       display:block;
+      box-shadow: 4px 4px 12px 0 rgba(0,0,0,.06);
       @include Desktop {
         margin:0;
         border-radius:0;
@@ -679,12 +808,28 @@ p, h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+  .defaultLineStatusFive {
+    max-width:120px;
+    height:14px;
+    border-radius:7px;
+    // background:#D8D8D8;
+    background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    top:78px;
+    .defaultLineStatusFiveFill {
+      background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+      height:14px;
+      border-radius:7px;
+    }
+  }
     }
     .activePlans {
-      // flex:1;
       width:160px;
       text-align:center;
       background:$white;
+      box-shadow: 0 4px 12px 0 rgba(0,0,0,.06);
       border-radius:6px;
       margin:0 16px 0 0;
       border-right:1px solid #eeeeee;
@@ -695,12 +840,45 @@ p, h1, h2, h3, h4, h5, h6 {
       @include Tablet {
         width:100%;
       }
+      .defaultLineStatusOne {
+        // background:#D8D8D8;
+        background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        height:12px;
+        max-width:60px;
+        border-radius:6px;
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        top:48px;
+        .defaultLineStatusOneFill {
+          background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+          height:12px;
+          border-radius:6px;
+        }
+      }
+      .defaultLineStatusTwo {
+        // background:#E4E4E4;
+        background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        height:16px;
+        max-width:80px;
+        border-radius:8px;
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        top:78px;
+        .defaultLineStatusTwoFill {
+          background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+          height:12px;
+          border-radius:6px;
+        }
+      }
     }
     .nextPayment {
       flex:1;
       background:$white;
       border-top-left-radius:6px;
       border-bottom-left-radius:6px;
+      // box-shadow: 0 4px 12px 0 rgba(0,0,0,.06);
       display:block;
       @include Desktop {
         border-radius:0;
@@ -722,12 +900,59 @@ p, h1, h2, h3, h4, h5, h6 {
           text-align:center;
         }
       }
+      .defaultLineStatusThree {
+        // background:#D8D8D8;
+        background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        height:12px;
+        max-width:60px;
+        border-radius:6px;
+        margin-left:42px;
+        position:relative;
+        top:48px;
+        .defaultLineStatusThreeFill {
+          background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+          height:12px;
+          border-radius:6px;
+        }
+      }
+      .defaultLineStatusFour {
+        // background:#E4E4E4;
+        background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        height:16px;
+        max-width:80px;
+        border-radius:8px;
+        margin-left:42px;
+        position:relative;
+        top:78px;
+        .defaultLineStatusFourFill {
+          background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+          height:16px;
+          border-radius:8px;
+        }
+      }
+      .defaultLineStatusFive {
+        max-width:120px;
+        height:14px;
+        border-radius:7px;
+        // background:#D8D8D8;
+        background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        top:78px;
+        .defaultLineStatusFiveFill {
+            height:14px;
+            border-radius:7px;
+            background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+        }
+      }
     }
     .paymentDate {
       flex:1;
       background:$white;
       border-top-right-radius:6px;
       border-bottom-right-radius:6px;
+      // box-shadow: 0 4px 12px 0 rgba(0,0,0,.06);
       text-align:center;
       display:block;
       @include Desktop {
@@ -741,6 +966,21 @@ p, h1, h2, h3, h4, h5, h6 {
         font-weight:200;
         padding-top:70px;
         color:#0080FF;
+      }
+      .defaultLineStatusFive {
+        max-width:120px;
+        height:14px;
+        border-radius:7px;
+        background:#E4E4E4;
+        margin-left:auto;
+        margin-right:auto;
+        position:relative;
+        top:78px;
+        .defaultLineStatusFiveFill {
+          height:14px;
+          border-radius:7px;
+          background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+      }
       }
     }
   }
@@ -950,6 +1190,20 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size:32px;
     color:#243646;
     font-weight:bold;
+  }
+
+  .defaultHeaderLine {
+    // background:#D8D8D8;
+    background:#f4f8fb;
+    // background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+    height:18px;
+    width:200px;
+    border-radius:9px;
+    .defaultHeaderLineFill {
+      background:linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+      height:18px;
+      border-radius:9px;
+    }
   }
 
  /* My Hosting Plans Starts */
@@ -1509,7 +1763,7 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   .marketPlaceMargin {
-    margin-bottom:100px;
+    padding-bottom:100px;
   }
 
   /* Market Place ENDS */

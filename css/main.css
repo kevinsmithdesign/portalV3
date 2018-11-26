@@ -314,6 +314,9 @@ p, h1, h2, h3, h4, h5, h6 {
 .pageContainer .userWelcomeContainer .userAlert {
   flex: 1; }
 
+.pageContainer .userWelcomeContainer .userAlert .alertContainer {
+  margin-bottom: 134px; }
+
 .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgOne {
   background: #0080FF;
   height: 82px;
@@ -387,6 +390,56 @@ p, h1, h2, h3, h4, h5, h6 {
   .pageContainer .userWelcomeContainer .userAlert .alertContainer .alertbgThree .alertBackup {
     display: none; } }
 
+.pageContainer .userWelcomeContainer .defaultNameLine {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 13px;
+  max-width: 100px;
+  border-radius: 7px;
+  position: relative;
+  z-index: 1;
+  margin: 20px 20px 60px 20px; }
+
+.pageContainer .userWelcomeContainer .defaultNameLine .defaultNameLineFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 13px;
+  border-radius: 7px; }
+
+.pageContainer .userWelcomeContainer .defaultDescriptionLineOne {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  width: 280px;
+  margin: 10px 20px 10px 20px;
+  border-radius: 8px; }
+
+.pageContainer .userWelcomeContainer .defaultDescriptionLineOne .defaultDescriptionLineOneFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  border-radius: 8px; }
+
+.pageContainer .userWelcomeContainer .defaultDescriptionLineTwo {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  width: 320px;
+  margin: 15px 20px 10px 20px;
+  border-radius: 8px; }
+
+.pageContainer .userWelcomeContainer .defaultDescriptionLineTwo .defaultDescriptionLineTwoFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  border-radius: 8px; }
+
+.pageContainer .userWelcomeContainer .defaultDescriptionLineThree {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  width: 300px;
+  margin: 15px 20px 120px 20px;
+  border-radius: 8px; }
+
+.pageContainer .userWelcomeContainer .defaultDescriptionLineThree .defaultDescriptionLineThreeFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  border-radius: 8px; }
+
 .pageContainer .userWelcomeContainer .testTwo {
   width: 20px; }
 
@@ -443,7 +496,8 @@ p, h1, h2, h3, h4, h5, h6 {
   width: 160px;
   background: #ffffff;
   border-radius: 6px;
-  text-align: center; }
+  text-align: center;
+  box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.06); }
 
 .pageContainer .statsContainer .statsWrapper .stats h1 {
   color: #00BB67; }
@@ -456,12 +510,46 @@ p, h1, h2, h3, h4, h5, h6 {
   .pageContainer .statsContainer .statsWrapper .stats {
     width: 100%; } }
 
+.pageContainer .statsContainer .statsWrapper .statusDefaultCard {
+  background: #ddd; }
+
+.pageContainer .statsContainer .statsWrapper .defaultLineStatusOne {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 12px;
+  max-width: 60px;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 48px; }
+
+.pageContainer .statsContainer .statsWrapper .defaultLineStatusOne .defaultLineStatusOneFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 12px;
+  border-radius: 6px; }
+
+.pageContainer .statsContainer .statsWrapper .defaultLineStatusTwo {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  max-width: 80px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 78px; }
+
+.pageContainer .statsContainer .statsWrapper .defaultLineStatusTwo .defaultLineStatusTwoFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  border-radius: 8px; }
+
 .pageContainer .statsContainer .visitors {
   flex: 1;
   background: #ffffff;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  display: block; }
+  display: block;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06); }
 
 @media only screen and (max-width: 1024px) {
   .pageContainer .statsContainer .visitors {
@@ -487,13 +575,42 @@ p, h1, h2, h3, h4, h5, h6 {
   .pageContainer .statsContainer .visitors {
     display: none; } }
 
+.pageContainer .statsContainer .visitors .defaultLineStatusThree {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 12px;
+  max-width: 60px;
+  border-radius: 6px;
+  margin-left: 42px;
+  position: relative;
+  top: 48px; }
+
+.pageContainer .statsContainer .visitors .defaultLineStatusThree .defaultLineStatusThreeFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 12px;
+  border-radius: 6px; }
+
+.pageContainer .statsContainer .visitors .defaultLineStatusFour {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  max-width: 80px;
+  border-radius: 8px;
+  margin-left: 42px;
+  position: relative;
+  top: 78px; }
+
+.pageContainer .statsContainer .visitors .defaultLineStatusFour .defaultLineStatusFourFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  border-radius: 8px; }
+
 .pageContainer .statsContainer .vistorsWeeklyTrend {
   flex: 1;
   background: #ffffff;
   margin: 0 16px 0 0;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  display: block; }
+  display: block;
+  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.06); }
 
 @media only screen and (max-width: 1024px) {
   .pageContainer .statsContainer .vistorsWeeklyTrend {
@@ -618,10 +735,26 @@ p, h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0; }
 
+.pageContainer .statsContainer .vistorsWeeklyTrend .defaultLineStatusFive {
+  max-width: 120px;
+  height: 14px;
+  border-radius: 7px;
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 78px; }
+
+.pageContainer .statsContainer .vistorsWeeklyTrend .defaultLineStatusFive .defaultLineStatusFiveFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 14px;
+  border-radius: 7px; }
+
 .pageContainer .statsContainer .activePlans {
   width: 160px;
   text-align: center;
   background: #ffffff;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.06);
   border-radius: 6px;
   margin: 0 16px 0 0;
   border-right: 1px solid #eeeeee; }
@@ -634,6 +767,36 @@ p, h1, h2, h3, h4, h5, h6 {
 @media only screen and (max-width: 922px) {
   .pageContainer .statsContainer .activePlans {
     width: 100%; } }
+
+.pageContainer .statsContainer .activePlans .defaultLineStatusOne {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 12px;
+  max-width: 60px;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 48px; }
+
+.pageContainer .statsContainer .activePlans .defaultLineStatusOne .defaultLineStatusOneFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 12px;
+  border-radius: 6px; }
+
+.pageContainer .statsContainer .activePlans .defaultLineStatusTwo {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  max-width: 80px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 78px; }
+
+.pageContainer .statsContainer .activePlans .defaultLineStatusTwo .defaultLineStatusTwoFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 12px;
+  border-radius: 6px; }
 
 .pageContainer .statsContainer .nextPayment {
   flex: 1;
@@ -666,6 +829,49 @@ p, h1, h2, h3, h4, h5, h6 {
     padding-left: 0;
     text-align: center; } }
 
+.pageContainer .statsContainer .nextPayment .defaultLineStatusThree {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 12px;
+  max-width: 60px;
+  border-radius: 6px;
+  margin-left: 42px;
+  position: relative;
+  top: 48px; }
+
+.pageContainer .statsContainer .nextPayment .defaultLineStatusThree .defaultLineStatusThreeFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 12px;
+  border-radius: 6px; }
+
+.pageContainer .statsContainer .nextPayment .defaultLineStatusFour {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  max-width: 80px;
+  border-radius: 8px;
+  margin-left: 42px;
+  position: relative;
+  top: 78px; }
+
+.pageContainer .statsContainer .nextPayment .defaultLineStatusFour .defaultLineStatusFourFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 16px;
+  border-radius: 8px; }
+
+.pageContainer .statsContainer .nextPayment .defaultLineStatusFive {
+  max-width: 120px;
+  height: 14px;
+  border-radius: 7px;
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 78px; }
+
+.pageContainer .statsContainer .nextPayment .defaultLineStatusFive .defaultLineStatusFiveFill {
+  height: 14px;
+  border-radius: 7px;
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%); }
+
 .pageContainer .statsContainer .paymentDate {
   flex: 1;
   background: #ffffff;
@@ -687,6 +893,21 @@ p, h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
   padding-top: 70px;
   color: #0080FF; }
+
+.pageContainer .statsContainer .paymentDate .defaultLineStatusFive {
+  max-width: 120px;
+  height: 14px;
+  border-radius: 7px;
+  background: #E4E4E4;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 78px; }
+
+.pageContainer .statsContainer .paymentDate .defaultLineStatusFive .defaultLineStatusFiveFill {
+  height: 14px;
+  border-radius: 7px;
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%); }
 
 .pageContainer .mobileStatsWrapper {
   display: none; }
@@ -889,6 +1110,17 @@ p, h1, h2, h3, h4, h5, h6 {
   font-size: 32px;
   color: #243646;
   font-weight: bold; }
+
+.pageContainer .defaultHeaderLine {
+  background: #f4f8fb;
+  height: 18px;
+  width: 200px;
+  border-radius: 9px; }
+
+.pageContainer .defaultHeaderLine .defaultHeaderLineFill {
+  background: linear-gradient(to right, #eeeeee 30%, #dddddd 60%, #eeeeee 90%);
+  height: 18px;
+  border-radius: 9px; }
 
 .pageContainer .columnWrapper {
   display: flex;
@@ -1430,4 +1662,4 @@ p, h1, h2, h3, h4, h5, h6 {
   border-radius: 6px; }
 
 .pageContainer .marketPlaceMargin {
-  margin-bottom: 100px; }
+  padding-bottom: 100px; }
